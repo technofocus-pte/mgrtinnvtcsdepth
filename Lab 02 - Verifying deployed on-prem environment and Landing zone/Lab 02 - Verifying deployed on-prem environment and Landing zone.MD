@@ -8,7 +8,7 @@ to launch the **Smart Hotel Application**, if the on-premises has been
 deployed successfully we should see the Smart Hotel application page
 showing **Check in** and **Checked Out** guest count.
 
-    ![BrokenImage](./media/image1.png)
+![BrokenImage](./media/image1.png)
 
 The landing zone that is created on Azure can be verified by checking
 the **SmartHotelRG** resource group and checking that the

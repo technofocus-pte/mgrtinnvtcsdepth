@@ -1,4 +1,4 @@
-# Lab 03 - Discovering and assessing the on-premises environment.
+# Lab 02 - Discovering and assessing the on-premises environment.
 
 **Objective**
 
@@ -16,8 +16,8 @@ SmartHotelHost, then run the required Discovery tasks.
 
 <font color=darkred>
 
-> **Important**: You should have allowed at least 60 minutes to deploy the on-premises
-environment (**Lab 1- Deploying the on-premises environment and landing zone**) before you start this lab.
+> **Important**: You should have allowed at least 30-40 minutes to deploy the on-premises
+environment (**Lab 1- Deploying and verifying the on-premises environment and landing zone**) before you start this lab.
 
 </font>
 
@@ -788,7 +788,7 @@ generated](./media/image92.png)
 
     - **Estimated cost by savings option**
 
-    - **Suggested VM family and Storage type**
+    - **Recommended VM family and Storage type**
 
     - **On-premises cost vs Azure cost**
 
@@ -808,7 +808,7 @@ generated](./media/image92.png)
     - **Distribution by category**
 
     ![](./media/image96.png)
-
+ 
 15. Click on the **View details** link under End of Support, it will
     list of all servers considered in the business case
     with **recommended targets, activity state** and **qualifying offers
@@ -820,6 +820,7 @@ generated](./media/image92.png)
     Assumptions.
 
     ![](./media/image98.png)
+
 
 17. Here you can modify the **Assumptions for Azure cost** and **Cost
     modelling** and then click on **Save** to reassess the Business
@@ -839,6 +840,7 @@ generated](./media/image92.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image99.png)
 
+
 19. Click on the **Storage** tab to check the settings
 
     ![A screenshot of a computer Description automatically
@@ -853,6 +855,9 @@ generated](./media/image101.png)
 
     ![A screenshot of a computer Description automatically
 generated](./media/image102.png)
+
+21. Click on the **Management** tab to check the settings
+    ![alt text](./media/image102a.png)
 
 22. Click on the **Labor** tab to check the settings
 
@@ -1004,8 +1009,8 @@ enabled; if you don't want to make any changes, just close the blade.
     ![A screenshot of a computer Description automatically
 generated](./media/image115.jpeg)
 
-6.  Enter **Assessment name** as **SmartHotelAssessment**.
-    Choose **Create New** and enter the group name **SmartHotel VMs**.
+6.  Enter **Assessment name** as `SmartHotelAssessment`.
+    Choose **Create New** and enter the group name `SmartHotel VMs`.
     Select
     the **smarthotelweb1**, **smarthotelweb2** and **UbuntuWAF** VMs
     then select **Next: Review+ Create assessment** button.
@@ -1172,7 +1177,7 @@ generated](./media/image133.png)
 5.  Create a new Log Analytics workspace.
     Use `AzureMigrateWSXXXXXX` \[Substitute **XXXXXX** with random
     number\] , as the workspace name. Choose Log Analytics workspace
-    location – **West US**, then select **Configure**.
+    location from the list, then select **Configure**.
 
 6.  Wait for the workspace to be deployed. Make a note of
     the **Workspace ID** and **Workspace Key** in Notepad.
