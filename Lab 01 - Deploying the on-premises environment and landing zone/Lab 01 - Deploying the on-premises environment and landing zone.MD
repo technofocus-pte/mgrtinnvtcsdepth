@@ -1,4 +1,4 @@
-# Lab 01 - Deploying the on-premises environment and landing zone
+# Lab 01 - Deploying and verifying the on-premises environment and landing zone
 
 ## Objective
 
