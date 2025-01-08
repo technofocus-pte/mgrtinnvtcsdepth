@@ -1,4 +1,4 @@
-# Lab 04 - Migrating the VMs from on-premises environment to Azure
+# Lab 03 - Migrating the VMs from on-premises environment to Azure
 
 ## Objective
 
@@ -9,30 +9,6 @@ the static IP for the replicated VM, and finally migrate the VMs to
 Azure in the respective Resource group.
 
 ![](./media/image1.png)
-
-### Task 0 – Start the On-premises Environment VM
-
-1.  On your Lab VM open a browser and navigate
-    to `https://portal.azure.com` login using the Office 365 Tenant
-    Credential from the **Home/Resources tab** of the Lab interface.
-
-2.  Select **Resource group** on home page.
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image2.png)
-
-3.  Select **SmartHotelHostRG** and then select **SmartHotelHost VM**.
-
-    ![Graphical user interface, text, application Description automatically
-generated](./media/image3.png)
-
-4.  Select **SmartHotelHost VM**.
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image4.png)
-
-5.  Click on the **Start** button to turn on the VM as it is expected to
-    be off from the previous Lab.
 
 ### Task 1: Create a Storage Account
 
@@ -58,7 +34,7 @@ management.
     ![Graphical user interface, text, application, email Description
 automatically generated](./media/image5.png)
 
-2.  Search for and select **Storage account**, followed by **Create**.
+2.  Search for and select `Storage account`, followed by **Create**.
 
     ![Graphical user interface, application Description automatically
 generated](./media/image6.png)
@@ -69,13 +45,13 @@ automatically generated](./media/image7.png)
 3.  In the **Create storage account** blade, on the **Basics** tab, use
     the following values:
 
-    - Subscription: **Azure Pass - Sponsorship**.
+    - Subscription: **Keep the default selected subscription**.
 
     - Resource group: **AzureMigrateRG**
 
     - Storage account
-      name: `migstrgXXXXXX` \[substitute **XXXXXX** with random
-      number\]
+      name: `migstrgXXXXXX` [substitute **XXXXXX** with random
+      number]
 
     - Location: **West US**.
 
@@ -86,8 +62,9 @@ automatically generated](./media/image7.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image8.jpeg)
 
-4.  Select the **Data protection** tab and uncheck the Enable soft
-    delete blobs and then select **Review** button, then
+
+4.  Select the **Data protection** tab and [**uncheck**] the **Enable soft
+    delete blobs** and then select **Review** button, then
     select **Create**.
 
     ![A screenshot of a computer Description automatically
@@ -99,8 +76,15 @@ generated](./media/image10.jpeg)
     ![A screenshot of a computer Description automatically
 generated](./media/image11.jpeg)
 
+5. Click on Go to resource and then under **Data management** select **Data protection** ensure that **Enable soft delete for blobs** is unchecked, then click on **Save** button.
+
+    ![alt text](image-1.png)
+
+
 You have completed this task. Do not close this tab to proceed ahead
 with the next task.
+
+
 
 **Task summary**
 
@@ -118,7 +102,7 @@ private, secure access to the SQL Database.
 > **Note:** Azure provides several options for deploying the right network
 configuration. After the lab, if you’d like to better understand your
 networking options, see the [network decision
-guide](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/software-defined-network/),
+guide]`https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/software-defined-network`,
 which builds on the Cloud Adoption Framework’s Azure landing zones.
 
 1.  Navigate to the **SmartHotelRG** resource group, and click on the
@@ -172,7 +156,7 @@ generated](./media/image15.jpeg)
 
     - Integrate with private DNS zone: **Yes**
 
-    - Subscription: **Azure Pass - Sponsorship**
+    - Subscription: **Keep the default selected subscription**
 
     - Resource group: **SmartHotelRG**
 
@@ -279,7 +263,7 @@ generated](./media/image27.jpeg)
 
     - Integrate with private DNS zone: **Yes**
 
-    - Subscription: **Azure Pass - Sponsorship**
+    - Subscription: **Keep the default selected subscription**
 
     - Resource group: **SmartHotelHostRG**
 
@@ -586,7 +570,7 @@ generated](./media/image63.jpeg)
     ![A screenshot of a computer Description automatically
 generated](./media/image65.jpeg)
 
-5.  Change the **Private IP address** to **192.168.0.4**.
+5.  Change the **Private IP address** to `192.168.0.4`.
     Select **OK** to close the network interface settings blade.
 
     ![Graphical user interface, text, application Description automatically
@@ -618,7 +602,7 @@ generated](./media/image69.jpeg)
 
     ![](./media/image71.png)
 
-10. Change the **Private IP address** to **192.168.0.5**.
+10. Change the **Private IP address** to `192.168.0.5`.
     Select **OK** to close the network interface settings blade.
 
     ![](./media/image72.png)
@@ -647,7 +631,7 @@ automatically generated](./media/image75.png)
 
     ![](./media/image76.png)
 
-15. Change the **Private IP address** to **192.168.0.8**.
+15. Change the **Private IP address** to `192.168.0.8`.
     Select **OK** to close the network interface settings blade.
 
     ![Graphical user interface, application Description automatically
