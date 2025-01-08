@@ -290,7 +290,7 @@ to complete the discovery phase of the migration assessment.
     ![](./media/image40.png)
 
 3.  On the **Customize settings** screen, set the Administrator password
-    to **demo!pass123** by typing the Password manually (twice). Then
+    to `demo!pass123` by typing the Password manually (twice). Then
     select **Finish**.
 
     > **Note**: When entering the password, the VM uses a US keyboard mapping.
@@ -306,7 +306,7 @@ to complete the discovery phase of the migration assessment.
     ![](./media/image42.png)
 
 5.  Log in with the Administrator by typing the password
-    manually **demo!pass123** (the login screen may pick up your local
+    manually `demo!pass123` (the login screen may pick up your local
     keyboard mapping, use the 'eyeball' icon to check).
 
     ![Graphical user interface, website Description automatically
@@ -411,7 +411,7 @@ generated](./media/image58.png)
 generated](./media/image59.png)
 
 20. Enter `hostlogin` as **Friendly name**, username `demouser`
-    and type the password manually **demo!pass123** for the Hyper-V
+    and type the password manually `demo!pass123` for the Hyper-V
     host/cluster that the appliance will use to discover VMs.
     Select **Save**.
 
@@ -476,7 +476,7 @@ generated](./media/image64.png)
 
     - Username – `.\Administrator`
 
-    - Password – type is manually **demo!pass123**
+    - Password – type is manually `demo!pass123`
 
     ![A screenshot of a computer Description automatically
 generated](./media/image65.png)
@@ -495,7 +495,7 @@ generated](./media/image66.png)
 
     - Username – `.\demouser`
 
-    - Password – type is manually **demo!pass123**
+    - Password – type is manually `demo!pass123`
 
     ![A screenshot of a computer Description automatically
 generated](./media/image67.png)
@@ -1209,7 +1209,7 @@ generated](./media/image136.png)
 
 13. Select **Connect** again when prompted and log in to
     the **Administrator** account by typing the
-    password **demo!pass123**
+    password `demo!pass123`
 
     ![Graphical user interface, application Description automatically
 generated](./media/image137.png)
@@ -1278,7 +1278,7 @@ generated](./media/image144.png)
 
 23. Select **Connect** again when prompted and log in to
     the **Administrator** account by typing the
-    password **demo!pass123**
+    password `demo!pass123`
 
     ![Graphical user interface, application Description automatically
 generated](./media/image137.png)
@@ -1362,12 +1362,12 @@ generated](./media/image147.png)
     `ssh demouser@192.168.0.8`
 
 34. Enter **'yes'** when prompted whether to connect. Use the
-    password **demo!pass123**.
+    password `demo!pass123`.
 
     ![](./media/image148.png)
 
 35. Enter the following command, followed by the
-    password **demo!pass123** when prompted:
+    password `demo!pass123` when prompted:
 
     `sudo -s`
 
@@ -1471,59 +1471,6 @@ generated](./media/image160.png)
 
     ![A screenshot of a computer Description automatically
 generated](./media/image161.png)
-
-**Task summary**
-
-In this task you explored the Azure Migrate dependency visualization
-feature.
-
-**Exercise summary**
-
-In this exercise, you used Azure Migrate to assess the on-premises
-environment. This included selecting Azure Migrate tools, deploying the
-Azure Migrate appliance into the on-premises environment, creating a
-migration assessment, and using the Azure Migrate dependency
-visualization.
-
-### Task 9: Stop on-premises environment VMs
-
-1.  Select **Resource group** on home page.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image162.png)
-
-2.  Select **SmartHotelHostRG** and then select **SmartHotelHost VM**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image163.png)
-
-3.  Select **SmartHotelHost VM**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image164.png)
-
-4.  Stop the VM if you would not be doing the next Labs the same day,
-    this is to ensure we have sufficient credits to complete all Labs.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image165.png)
-
-5.  Confirm by clicking on the OK button
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image166.png)
-
-6.  You should get the notification as shown in below image
-
-    ![A close up of words Description automatically
-generated](./media/image167.png)
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image168.png)
-
-    > **Note** – The SmartHotelHost VM is stopped as it is a Standard D8s VM
-    which will consume Azure Pass credits if it is left running, which may
-    result in insufficient credits to complete the remaining lab.
 
 **Summary**
 
