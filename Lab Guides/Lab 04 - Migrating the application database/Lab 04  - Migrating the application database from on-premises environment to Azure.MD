@@ -87,8 +87,32 @@ host running in an Azure VM. This VM is deployed to the 'smarthotelvnet'
 VNet. The DMS will be deployed to a separate VNet called 'DMSVnet'. To
 simulate the on-premises connection, these two VNet have been peered.
 
-1.  Connect to the **SmartHotelHost** VM using Remote desktop and
-    launch **Chrome** from the desktop shortcut.
+1. navigate to the **Azure portal**. In the
+    global search box, enter `SmartHotelHost` then select
+    the **SmartHotelHost** virtual machine.
+
+    ![](./media/image17a.png)
+
+1.  Select **Connect**, choose **Connect** from the drop-down.
+
+    ![A screenshot of a computer Description automatically
+generated](./media/image18a.jpeg)
+
+2.  Select **Download RDP File**.
+
+    ![A screenshot of a computer Description automatically
+generated](./media/image19a.jpeg)
+
+3. Click on the **Keep** button for the notification and then click
+    on **Open file** to connect.
+
+    ![A screenshot of a computer Description automatically
+generated](./media/image20a.jpeg)
+
+3. **Connect** to the virtual machine using username `demouser` and
+    password `demo!pass123`
+
+1. Launch **Chrome** from the desktop shortcut.
 
 2.  Navigate to the Azure portal `https://portal.azure.com` search
     for `Azure database migration`, and then select **Azure Database
