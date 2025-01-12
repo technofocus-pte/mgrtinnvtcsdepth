@@ -1,4 +1,4 @@
-# Lab 05 - Migrating the application database from on-premises environment to Azure
+# Lab 04 - Migrating the application database from on-premises environment to Azure
 
 ## Objective
 
@@ -31,10 +31,15 @@ subscription.
     ![A screenshot of a computer Description automatically
 generated](./media/image2.jpeg)
 
-2.  Select **Create storage** button.
+2.  On the **Get started** window select **Mount storage account** and then select the appropriate subscription and thek click on the **Apply** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image3.jpeg)
+    ![alt text](./media/image3.png)
+
+2. On the **Mount storage account** window select **We will create a storage account for you** and then click on the **Next** button.
+
+    ![alt text](./media/image3a.png)
+
+2. Wait for the deployment to complete.
 
 3.  Run the following command to register
     the **Microsoft.DataMigration** resource provider:
