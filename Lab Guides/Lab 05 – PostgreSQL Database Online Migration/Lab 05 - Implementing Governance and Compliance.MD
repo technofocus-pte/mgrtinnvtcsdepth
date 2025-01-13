@@ -584,13 +584,22 @@ generated](./media/image23.jpeg)
 14. On the **Validation** tab you should be able to see the Validation
     tasks details.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image24.jpeg)
+    ![](./media/image24.jpeg)
+
+    <font color=darkred>
+
+    * > Note - If the LanguageValidation - failed error appear, you can try to re-initiate migration again, if you are still facing then error, then please refer to following steps to see how the migration could have proceeded. 
+
+    </font>
+
+    ![](./media/image24a.png)
+
 
 15. On the **Migration** tab, it will show the migration status queued.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image25.jpeg)
+
 
 16. On the **PostgreSQLToAzurePG** page, click on the refresh button
     again and notice that Migration tasks are also completed and now it
