@@ -2,164 +2,13 @@
 
 ## Objective
 
-In that lab we will initially reconnect the migrated SQL Database back
-to the Web Tier and test that we are able to access the **Smart Hotel
-Application** after it has been migrated to cloud. Then we will optimize
-the Cloud environment using **Microsoft Cloud Adoption Framework** for
+In that lab we will optimize the Cloud environment using **Microsoft Cloud Adoption Framework** for
 Azure (**CAF**).
 
-We will also create **Azure Policies** to assign and manage Tags and
-list non-compliant resource and utilize Tags for administration.
+We are going to create **Azure Policies** to assign and manage Tags and
+list non-compliant resource and utilize Tags for administration. Additionally we will create tag and check the Resource locks functionality.
 
-We will also create tag and check the Resource locks functionality.
-
-## Exercise 1: Connecting the Migrated Database to the Web Tier
-
-As we had performed the Migration of the VMs using Azure Migrate and
-Database migration using **Azure Data Studio / Azure Database Migration
-Service**. Now we will be connecting the Database back to the Web tier
-by modifying the Connection details on the VM **smarthotelweb2**.
-
-### Task 1: Configure the database connection
-
-1.  The application tier machine **smarthotelweb2** is configured to
-    connect to the application database running on
-    the **smarthotelsql** machine.
-
-2.  On the migrated VM **smarthotelweb2**, this configuration needs to
-    be updated to use the Azure SQL Database instead.
-
-3.  On the Lab VM open the Edge browser and navigate to Azure Portal
-    Virtual Machine blade
-    - `https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FVirtualMachines`
-
-4.  From the list of VMs Start the below 2 migrated VMs
-
-    - **Smarthotelweb1**
-
-    - **smarthotelweb2**
-
-    ![](./media/image1.png)
-
-5.  Select the **smarthotelweb2** VM, then from the overview blade,
-    select **Connect**.
-
-    ![](./media/image2.png)
-
-6.  Select **Bastion** and connect to the machine with the
-    Username `administrator` and the password `demo!pass123`
-
-    ![](./media/image3.png)
-
-    > **Note** - A popup blocker of your web browser must be disabled in order
-    to connect, and when prompted, **Allow** clipboard access.
-
-    ![Graphical user interface, application Description automatically
-generated](./media/image4.png)
-
-    ![Graphical user interface, text Description automatically
-generated](./media/image5.png)
-
-7.  In the **smarthotelweb2** remote desktop session, open Windows
-    Explorer and navigate to
-    the `C:\inetpub\SmartHotel.Registration.Wcf` folder.
-    Double-click the **Web.config** file and open with Notepad.
-
-    ![Graphical user interface, text, application, table Description
-automatically generated](./media/image6.png)
-
-8.  Update the **DefaultConnection** setting to connect to your Azure
-    SQL Database.
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image7.png)
-
-9.  You can find the connection string for the Azure SQL Database in the
-    Azure portal by browsing to the database and selecting **Show
-    database connection strings**.
-
-    ![Graphical user interface, text, application Description automatically
-generated](./media/image8.png)
-
-10. Copy the **ADO.NET** connection string,
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image9.png)
-
-11. Paste the copied string by adding the
-    password `demo!pass123` into the web.config file
-    on **smarthotelweb2**, replacing the existing connection string. 
-
-    <font color= darkred>
-
-    **Note:** **Be careful not to overwrite the 'providerName' parameter
-    which is specified after the connection string.**
-
-    </font>
-
-    ![](./media/image10.png)
-
-    > **Note:** You may need to open the clipboard panel on the left-hand edge
-    of the Bastion window, paste the connection string there, and then paste
-    into the VM.
-
-12. **Save** the **web.config** file and exit your Bastion remote
-    desktop session.
-
-### Task 2: Configure the public IP address and test the SmartHotel application
-
-In this task, you will associate an Application Gateway with Web
-Application Firewall (WAF) to replace the Ubuntu VM with the Azure
-managed service.
-
-1.  Navigate to the **SmartHotel-WAF** Application Gateway in
-    the **SmartHotelRG** resource group.
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image11.png)
-
-2.  Select **Backend pools** under the Settings section, and select
-    the **WebBackend** pool
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image12.png)
-
-3.  Set the Target type to **Virtual machine** and the Target to the NIC
-    of **smarthotelweb1**; select **Save** to update the backend pool
-
-    ![](./media/image13.png)
-
-    > **Note:** This backend pool is already associated with the front-end IP
-    address of the Application Gateway via the SmartHotelApp rule. The
-    front-end IP, listener, rule, and backend pool were all created with the
-    Application Gateway. This step now ties the migrated VM to the front
-    end.
-
-4.  Navigate to the **Overview** of the Application Gateway and note the
-    IP address associated with the public IP address
-
-    ![](./media/image14.png)
-
-5.  Open a new browser tab and paste the IP address into the address
-    bar. Verify that the SmartHotel360 application is now available in
-    Azure.
-
-    ![Graphical user interface Description automatically generated with
-medium confidence](./media/image15.png)
-
-    > **Note:** At this point the base Application Gateway service is
-    providing access to the backend application. This validates that the
-    application is working and can be further protected by the WAF in the
-    following steps.
-
-6.  Hence, we have successfully migrated the application from
-    on-premises to cloud and able to make the **Smart Hotel
-    Application** live once the infrastructure has been migrated to
-    Azure.
-
-    ![](./media/image16.png)
-
-## Exercise 2: Implementing governance with CAF Azure Foundation Blueprint
+## Exercise 1: Implementing governance with CAF Azure Foundation Blueprint
 
 The **Microsoft Cloud Adoption Framework for Azure (CAF)** Foundation
 blueprint deploys a set of core infrastructure resources and policy
@@ -190,7 +39,7 @@ First, implement the blueprint sample by creating a new blueprint in
 your environment using the sample as a starter.
 
 1.  Select **All services** in the left pane. Search for and
-    select **Blueprints**.
+    select `Blueprints`.
 
     ![](./media/image18.png)
 
@@ -303,6 +152,7 @@ deployment of the copy of the blueprint sample unique.
     ![Graphical user interface, text, application, email Description
 automatically generated](./media/image29.png)
 
+
     - Managed Identity – **System Assigned**
 
     - Which Azure Regions will allow resource to be built in – **West US**
@@ -330,14 +180,12 @@ automatically generated](./media/image31.png)
         ![](./media/image32.png)
 
     - Azure AD Group or User **'ObjectID'** to grant permissions in Key
-    Vault – **Object ID of the Global Administrator (MOD Administrator)**
+    Vault – **Object ID of the Global Administrator account used in the Labs**
 
-    - Follow the link in a new tab and sign with your account details.
+    - Follow the link in a new tab and sign with your account details. `https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers` in the search type/paste the provided Office 365 Tenant account email then select it. Copy the **Object ID**.
 
-    `https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers`
-
-    ![Graphical user interface, text, application Description automatically
-generated](./media/image33.png)
+    ![](./media/image33a.png)
+    ![](./media/image33.png)
 
     - Number of days data will be retained in Log Analytics – **365**
 
@@ -541,7 +389,7 @@ generated](./media/image56.png)
     - **Resource Types that you do not want to allow in your
       environment**
 
-## Exercise 3 – Create a policy assignment to identify non-compliant resources.
+## Exercise 2 – Create a policy assignment to identify non-compliant resources.
 
 The first step in understanding compliance in Azure is to identify the
 status of your resources. This quickstart steps you through the process
@@ -559,7 +407,7 @@ that do not use managed disks* policy definition.
 
 1.  Launch the **Azure Policy** service in the Azure portal by
     selecting **All services**, then searching for and
-    selecting **Policy**.
+    selecting `Policy`.
 
     ![Graphical user interface, application Description automatically
 generated](./media/image57.png)
@@ -584,7 +432,7 @@ generated](./media/image59.png)
     assignment gets enforced on. Then use the **Select** button at the
     bottom of the **Scope** page.
 
-    > **Note:** This example uses the **Azure pass** subscription. Your
+    > **Note:** Your
     subscription will differ.
 
 5.  Resources can be excluded based on
@@ -611,7 +459,7 @@ automatically generated](./media/image60.png)
 
 8.  The **Assignment name** is automatically populated with the policy
     name you selected, but you can change it. For this example,
-    leave *Audit VMs that do not use managed disks*. You can also add an
+    leave `Audit VMs that do not use managed disks`. You can also add an
     optional **Description**. The description provides details about
     this policy assignment. **Assigned by** will automatically fill
     based on who is logged in. This field is optional, so custom values
@@ -620,7 +468,7 @@ automatically generated](./media/image60.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image61.png)
 
-9.  On the **Advanced** tab, click **Next**. If the policy definition
+9.  Click **Next**. If the policy definition
     selected on the **Basics** tab included parameters, they are
     configured on this tab. Since the *Audit VMs that do not use managed
     disks* has **no parameters**, select **Next** at the bottom of the
@@ -628,10 +476,8 @@ generated](./media/image61.png)
     the next segment of the assignment wizard.
 
     ![Graphical user interface, text, application Description automatically
-generated](./media/image62.png)
-
-    ![Graphical user interface, text, application Description automatically
 generated](./media/image63.png)
+
 
 10. Leave **Create a Managed Identity** unchecked. This box *must* be
     checked when the policy or initiative includes a policy with either
@@ -650,12 +496,13 @@ generated](./media/image64.png)
     messages** tab at the top of the page to move to the next segment of
     the assignment wizard.
 
-12. Set the **Non-compliance message** to **Virtual machines should use
-    a managed disk.** This custom message is displayed when a resource
+12. Set the **Non-compliance message** to `Virtual machines should use
+    a managed disk.` This custom message is displayed when a resource
     is denied or for non-compliant resources during regular evaluation.
 
     ![Graphical user interface, text, application, email Description
 automatically generated](./media/image65.png)
+
 
 13. Select **Next** at the bottom of the page or the **Review +
     Create** tab at the top of the page to move to the next segment of
@@ -704,7 +551,7 @@ automatically generated](./media/image69.png)
 You have completed this exercise. Please proceed ahead with the next
 exercise.
 
-## Exercise 4 - Tagging Azure Resources with Tags for Administration.
+## Exercise 3 - Tagging Azure Resources with Tags for Administration.
 
 1.  On the Azure Portal in the search bar type **storage** and
     select **Storage account**, when the resource is listed,
@@ -755,7 +602,7 @@ automatically generated](./media/image75.png)
 You have completed this exercise. Please proceed ahead with the next
 Exercise.
 
-## Exercise 5: Protecting Azure Resources with Resource Manager Locks
+## Exercise 4: Protecting Azure Resources with Resource Manager Locks
 
 **Resource Manager Locks** provide a way for administrators to lock down
 Azure resources to *prevent deletion or changing of a resource*. These
@@ -856,14 +703,6 @@ generated](./media/image84.png)
     Virtual Network \[Vnet\] or Key Vault.
 
 **Summary**
-
-We should have been able to successfully connect the migrated SQL
-Database back to the Web Tier and should have been able to
-access **Smart Hotel Application** using the Public IP of the
-Application Gateway.
-
-![Graphical user interface Description automatically generated with
-medium confidence](./media/image15.png)
 
 We should have successfully implemented the **Microsoft Cloud Adoption
 Framework** Blueprint and have restricted the resource creation to West

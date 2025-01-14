@@ -588,7 +588,7 @@ generated](./media/image23.jpeg)
 
     <font color=darkred>
 
-    * > Note - If the LanguageValidation - failed error appear, you can try to re-initiate migration again, if you are still facing then error, then please refer to following steps to see how the migration could have proceeded. 
+    * > Note - If the **LanguageValidation - failed** error appear, you can try to re-initiate migration again, if you are still facing then error, then please refer to following steps to refer how the migration could have proceeded and then you can proceed to the next Lab.
 
     </font>
 
