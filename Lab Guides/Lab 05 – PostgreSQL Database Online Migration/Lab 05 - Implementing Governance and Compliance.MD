@@ -70,7 +70,7 @@ generated](./media/image36a.jpeg)
 8.  Enter the below command to create the Resource group
 
     `New-AzResourceGroup -ResourceGroupName "PostgresRG" -Location
-    "EastUS"`
+    "WestUS"`
 
     ![A blue screen with white text Description automatically
 generated](./media/image37a.jpeg)
