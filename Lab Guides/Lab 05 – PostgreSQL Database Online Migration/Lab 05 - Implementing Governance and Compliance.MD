@@ -495,9 +495,9 @@ generated](./media/image14.jpeg)
 
 5.  On the **Migrate PostgreSQL to Azure Database for PostgreSQL
     Flexible Server** page on the Setup tab, provide the below
-    information and then click on **Next: Select Runtime Server\**
+    information and then click on **Next: Select Runtime Server**
 
-    - Migration name - PostgreSQLToAzurePG
+    - Migration name - `PostgreSQLToAzurePG`
 
     - Source server – **On-premise Server**
 
