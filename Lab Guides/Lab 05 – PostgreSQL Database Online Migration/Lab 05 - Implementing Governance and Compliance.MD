@@ -92,15 +92,6 @@ generated](./media/image37a.jpeg)
             -Credential $cred `
             -Size "Standard_b2ms"
 
-    ![](./media/image38a.jpeg)
-
-**Note –** If you receive error for VM size, you can replace the code
-with one of the below
-
-- Standard_D2ps_v5
-
-- Standard_D2pds_v5
-
     ![A blue screen with white text Description automatically
 generated](./media/image39a.jpeg)
 
