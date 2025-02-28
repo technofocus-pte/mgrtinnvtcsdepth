@@ -54,7 +54,7 @@ generated](./media/image4.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image5.png)
 
-5.  Select **Azure Pass - Sponsorship** as your subscription and create
+5.  Select the appropriate Subscription and create
     a new resource group named `AzureMigrateRG`
 
     ![](./media/image6.png)
