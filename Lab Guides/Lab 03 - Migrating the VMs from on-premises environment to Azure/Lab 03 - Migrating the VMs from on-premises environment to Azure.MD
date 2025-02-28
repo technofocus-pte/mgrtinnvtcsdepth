@@ -78,7 +78,7 @@ generated](./media/image11.jpeg)
 
 5. Click on Go to resource and then under **Data management** select **Data protection** ensure that **Enable soft delete for blobs** is unchecked, then click on **Save** button.
 
-    ![alt text](image-1.png)
+    ![](./media/image11a.png)
 
 
 You have completed this task. Do not close this tab to proceed ahead
