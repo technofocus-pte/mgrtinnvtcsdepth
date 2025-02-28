@@ -625,7 +625,6 @@ generated](./media/image74.jpeg)
 automatically generated](./media/image75.png)
 
 14. Confirm that the VM is configured to use the **F2s_v2** VM size
-    (or **DS2_v2 or D2s_v3** if using an Azure Pass subscription)
     .Under **Network Interfaces**, select **InternalNATSwitch** to open
     the network interface settings.
 
