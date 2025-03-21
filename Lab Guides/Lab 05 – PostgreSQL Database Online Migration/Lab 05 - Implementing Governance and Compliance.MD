@@ -35,11 +35,10 @@ generated](./media/image31a.jpeg)
 generated](./media/image32a.jpeg)
 
 3.  On the **Getting started** window, choose the radio button
-    for **Mount storage account** and then select the **Azure Pass –
-    Sponsorship** subscription and then click on the **Apply** button.
+    for **Mount storage account** and then select the **Depth-lod@lab.LabInstance.Id** subscription and then click on the **Apply** button.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image33a.jpeg)
+generated](./media/image33a.png)
 
 4.  On the Mount storage account window, choose the **We will create
     storage account for you** radio button and then click on **Next**.
@@ -50,7 +49,7 @@ generated](./media/image34a.jpeg)
 5.  Wait for the deployment to complete
 
     ![A computer screen shot of a computer program Description automatically
-generated](./media/image35a.jpeg)
+generated](./media/image35a.png)
 
 6.  In the Cloud Shell PowerShell window type the below commands to
     configure variables and create the VM that will be used for
@@ -579,7 +578,9 @@ generated](./media/image23.jpeg)
 
     <font color=darkred>
 
-    * > Note - If the **LanguageValidation - failed** error appear, you can try to re-initiate migration again, if you are still facing then error, then please refer to following steps to refer how the migration could have proceeded and then you can proceed to the next Lab.
+    * > Note - If the **LanguageValidation - failed** error appear, you can try to re-initiate migration again, if you are still facing then error, then please refer to following steps to refer how the migration could have been completed. 
+    
+        >You can **proceed/skip to the next Lab**.
 
     </font>
 
