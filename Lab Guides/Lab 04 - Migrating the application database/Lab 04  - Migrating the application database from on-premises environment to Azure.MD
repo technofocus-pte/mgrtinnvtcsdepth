@@ -136,7 +136,7 @@ generated](./media/image8.jpeg)
 5.  On the Create Data Migration Service page, Basics tab, provide the
     below details.
 
-    - Subscription -- **Azure Pass -- Sponsorship**
+    - Subscription -- **Depth-@lab.CloudSubscription.Id**
 
     - Resource group: **SmartHotelRG**
 
@@ -147,12 +147,12 @@ generated](./media/image8.jpeg)
     - Click on **Review + create**
 
     ![A screenshot of a data migration service Description automatically
-generated](./media/image9.jpeg)
+generated](./media/image9.png)
 
 6.  On the **Review + create** tab, click on the **Create** button.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image10.jpeg)
+generated](./media/image10.png)
 
 7.  The Deployment should be completed in few seconds, click on **Go to
     resource** button.
