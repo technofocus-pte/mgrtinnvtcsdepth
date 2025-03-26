@@ -74,8 +74,8 @@ generated](./media/image36a.jpeg)
     ![A blue screen with white text Description automatically
 generated](./media/image37a.jpeg)
 
-9.  Enter the below command to deploy the Windows Server 2019 Datacenter
-    VM
+9.  Enter the below command to deploy the **Ubuntu 22.0.4.4 LTS** VM
+
 
     # 
         New-AzVm `
