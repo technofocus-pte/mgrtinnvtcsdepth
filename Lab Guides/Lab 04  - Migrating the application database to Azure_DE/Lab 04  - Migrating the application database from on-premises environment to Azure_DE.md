@@ -28,7 +28,7 @@ Ressourcenanbieter **Microsoft.DataMigration** im Ziel-Abonnement
 registriert werden.
 
 1.  Öffnen Sie Azure Cloud Shell, indem Sie zu
-    `https://shell.azure.com`` ``navigieren`. Melden Sie sich mit den
+    `https://shell.azure.com` navigieren. Melden Sie sich mit den
     Anmeldeinformationen Ihres Azure-Abonnements an, wenn Sie dazu
     aufgefordert werden, wählen Sie eine **PowerShell-Sitzung aus** ,
     und akzeptieren Sie alle Eingabeaufforderungen.
@@ -44,7 +44,7 @@ registriert werden.
 
 - ![Alt-Text](./media/image3.png)
 
-  Alt-Text
+
 
 3.  Wählen Sie im Fenster **Mount storage account**, die Option **We
     will create a storage account for you**, und klicken Sie dann auf
@@ -52,7 +52,7 @@ registriert werden.
 
 - ![Alt-Text](./media/image4.png)
 
-  Alt-Text
+
 
 4.  Warten Sie, bis die Bereitstellung abgeschlossen ist.
 
