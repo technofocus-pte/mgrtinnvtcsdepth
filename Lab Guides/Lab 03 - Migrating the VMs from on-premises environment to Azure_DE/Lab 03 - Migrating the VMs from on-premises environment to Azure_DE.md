@@ -31,7 +31,7 @@ VM-Daten während der Migration verwendet wird.
 
 1.  Wechseln Sie zurück zur Registerkarte **Azure Portal,** oder öffnen
     Sie eine neue Registerkarte, navigieren Sie zu
-    ``https://portal.azure.com`,`` `und melden Sie sich mit Ihren Office
+    `https://portal.azure.com`, und melden Sie sich mit Ihren Office
     365-Mandantenanmeldeinformationen an. Wählen Sie im linken
     Navigationsbereich des Azure-Portals die Option **+ Create** a
     resource aus.
@@ -42,7 +42,7 @@ VM-Daten während der Migration verwendet wird.
   Grafische Benutzeroberfläche, Text, Anwendung, E-Mail Beschreibung
   wird automatisch generiert
 
-2.  Suchen Sie nach `Storage account``, und wählen Sie es`` `aus,
+2.  Suchen Sie nach `Storage account`, und wählen Sie esaus,
     gefolgt von **Create**.
 
 - ![Grafische Benutzeroberfläche, Anwendung Beschreibung wird
@@ -157,7 +157,7 @@ ermöglichen.
 
     1.  Resource group: **SmartHotelRG**
 
-    2.  Name: `SmartHotel``-DB-Endpoint`
+    2.  Name: `SmartHotel-DB-Endpoint`
 
     - Region: **West US**  (Wählen Sie denselben Standort wie das
       SmartHotelVNet aus.)
@@ -188,7 +188,7 @@ ermöglichen.
 - ![](./media/image15.png)
 
 6.  Geben Sie auf der Registerkarte **DNS,** die folgende Konfiguration
-    ein, und wählen Sie dann **Next: Tags** aus**.**
+    ein, und wählen Sie dann **Next: Tags** aus.
 
     - Integrate with private DNS zone: **Yes**
 
@@ -374,7 +374,7 @@ Registrierungsprozesses stellen Sie den **Azure Site Recovery Provider**
 auf Ihrem **Hyper-V-Host** bereit.
 
 1.  Kehren Sie zum Schwert **Azure Migrate** im **Azure-Portal**
-    https://portal.azure.com` ``zurück`.
+    'https://portal.azure.com` zurück.
 
 - ![Grafische Benutzeroberfläche, Anwendung Beschreibung wird
   automatisch generiert](./media/image30.png)
