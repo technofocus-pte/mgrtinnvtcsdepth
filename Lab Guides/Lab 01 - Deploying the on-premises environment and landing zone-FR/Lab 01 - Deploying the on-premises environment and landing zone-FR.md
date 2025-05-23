@@ -18,6 +18,7 @@ compris les éléments ci-dessous
 
 - Azure SQL database, etc.
 
+&nbsp;
 
 - ![](./media/image1.jpg)
 
@@ -140,12 +141,12 @@ Un schéma d'un serveur Description générée automatiquement
   Interface utilisateur graphique, application Description générée
   automatiquement
 
-  > **Remarque :** Si SmartHotel application n est pas
-  affichée, attendez 10 minutes et réessayez. Il faut **au moins 1
-  heure** à partir du début du déploiement du modèle. Vous pouvez
-  également vérifier les niveaux d'activité du processeur, du réseau
-  et du disque pour la machine virtuelle **SmartHotelHost** dans le
-  portail Azure, pour voir si le provisionnement est toujours actif.
+  > **Remarque :** Si **SmartHotel application**  **n'**est **pas**
+  > affichée, attendez 10 minutes et réessayez. Il faut **au moins 1
+  > heure** à partir du début du déploiement du modèle. Vous pouvez
+  > également vérifier les niveaux d'activité du processeur, du réseau
+  > et du disque pour la machine virtuelle **SmartHotelHost** dans le
+  > portail Azure, pour voir si le provisionnement est toujours actif.
 
 Vous avez terminé cette tâche. Ne fermez pas cet onglet pour passer à la
 tâche suivante.

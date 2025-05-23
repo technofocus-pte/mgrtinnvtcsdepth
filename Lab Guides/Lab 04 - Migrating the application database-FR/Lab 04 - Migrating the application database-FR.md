@@ -112,7 +112,7 @@ appelé « DMSVnet ». Pour simuler la connexion locale, ces deux réseaux
 virtuels ont été appairés.
 
 1.  accédez au **Azure portal** . Dans la zone de recherche globale,
-    entrez `SmartHotelHost` puis sélectionnez la machine virtuelle
+    entrez `SmartHotelHost,`` ` puis sélectionnez la machine virtuelle
     **SmartHotelHost.**
 
 - ![](./media/image7.png)
@@ -144,7 +144,7 @@ virtuels ont été appairés.
   automatiquement
 
 5.  **Connectez-vou** à la machine virtuelle à l'aide du nom
-    d'utilisateur `demouser` et du mot de passe `demo!pass123`
+    d'utilisateur `demouser` et du mot de passe `demo !pass``123`
 
 6.  Lancez **Chrome** à partir du raccourci sur le bureau.
 
@@ -360,7 +360,7 @@ virtuels ont été appairés.
 
     - Nom d'utilisateur : `sa`
 
-    - Mot de passe : `demo !pass123`
+    - Mot de passe : `demo!pass123`
 
     - Propriétés de connexion – **enable both check boxes**
 
@@ -385,7 +385,7 @@ virtuels ont été appairés.
 7.  Dans l' onglet **Connect to the target Azure SQL Database**  toutes
     les informations doivent déjà être renseignées, vous pouvez
     consulter les informations, puis fournir le mot de passe –
-    `demo !pass123` et cliquer sur **Next: Map source and target
+    `demo!pass123` et cliquer sur **Next: Map source and target
     databases \>\>**
 
 - ![Une capture d'écran d'un ordinateur Description générée

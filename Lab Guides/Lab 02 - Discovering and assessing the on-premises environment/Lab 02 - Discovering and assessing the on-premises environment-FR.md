@@ -160,7 +160,7 @@ données à votre projet Azure Migrate.
   Une description en noir et blanc générée automatiquement
 
 7.  Dans un onglet de navigateur distinct, accédez au **Azure portal**.
-    Dans la zone de recherche globale, entrez `SmartHotelHost` puis
+    Dans la zone de recherche globale, entrez `SmartHotelHost, ` puis
     sélectionnez la machine virtuelle **SmartHotelHost**.
 
 - ![](./media/image17.png)
@@ -192,7 +192,7 @@ données à votre projet Azure Migrate.
   automatiquement
 
 11. **Connectez-vous** à la machine virtuelle à l'aide du nom
-    d'utilisateur `demouser` et du mot de passe `demo !pass123`
+    d'utilisateur `demouser` et du mot de passe `demo!pass123`
 
 - ![](./media/image21.png)
 
@@ -371,7 +371,7 @@ migration.
 - ![](./media/image42.png)
 
 5.  Connectez-vous avec l'administrateur en tapant manuellement le mot
-    de passe `demo !pass123` (l'écran de connexion peut récupérer le
+    de passe `demo!pass123` (l'écran de connexion peut récupérer le
     mappage de votre clavier local, utilisez l'icône 'globe oculaire'
     pour vérifier).
 
@@ -520,7 +520,7 @@ migration.
   automatiquement
 
 20. Entrez `hostlogin` en tant que **Friendly name**,nom d'utilisateur
-    `demouser` et tapez manuellement le mot de passe `demo !pass123`
+    `demouser`` `et tapez manuellement le mot de passe `demo!pass123`
     pour the Hyper-V host/cluster que l'appliance utilisera pour
     détecter les machines virtuelles. Sélectionnez **Save**.
 
@@ -603,7 +603,7 @@ migration.
 
     - Nom d'utilisateur – `.\Administrator`
 
-    - Mot de passe – tapez manuellement `demo !pass123`
+    - Mot de passe – tapez manuellement `demo!pass123`
 
 - ![Une capture d'écran d'un ordinateur Description générée
   automatiquement](./media/image65.png)
@@ -629,7 +629,7 @@ migration.
 
     - Nom d'utilisateur – `.\demouser`
 
-    - Mot de passe – tapez manuellement `demo !pass123`
+    - Mot de passe – tapez manuellement `demo!pass123`
 
 - ![Une capture d'écran d'un ordinateur Description générée
   automatiquement](./media/image67.png)
@@ -1398,13 +1398,13 @@ modifications, fermez simplement la lame.
     les données des serveurs ne sont pas actualisées, il s'agit d'une
     méthode pour les accélérer.
 
-  
+  &nbsp;
 
   - Ne voyez pas les détails de l'inventaire logiciel : par défaut,
     l'inventaire logiciel n'est actualisé qu'une fois toutes les 24
     heures. Cela oblige à un rafraîchissement.
 
-  
+  &nbsp;
 
   - Erreurs d'inventaire logiciel – pendant l'inventaire, des codes
     d'erreur sont parfois renvoyés. Celle-ci répertorie tous les codes
@@ -1544,7 +1544,7 @@ virtuelles à migrer.
 
     - Nom d'utilisateur - `demouser`
 
-    - Mot de passe - `demo !pass123`
+    - Mot de passe - `demo!pass123`
 
 8.  Dans **le Hyper-V Manager**, sélectionnez **smarthotelweb1** et
     sélectionnez **Connect**.
@@ -1557,7 +1557,7 @@ virtuelles à migrer.
 
 9.  Sélectionnez à nouveau **connect** lorsque vous y êtes invité et
     connectez-vous au compte **administrator** en tapant le mot de passe
-    `demo !pass``123`
+    `demo!pass123`
 
 - ![Interface utilisateur graphique, application Description générée
   automatiquement](./media/image138.png)
@@ -1646,7 +1646,7 @@ virtuelles à migrer.
 
 19. Sélectionnez à nouveau **connect** lorsque vous y êtes invité et
     connectez-vous au **compte administrateur** en tapant le mot de
-    passe `demo !pass``123`
+    passe `demo!pass123`
 
 - ![Interface utilisateur graphique, application Description générée
   automatiquement](./media/image138.png)
@@ -1758,11 +1758,11 @@ virtuelles à migrer.
 - `SSH demouser@192.168.0.8`
 
 30. Entrez **‘yes’**  lorsque vous êtes invité à vous connecter ou non.
-    Utilisez le mot de passe `demo !pass123`.
+    Utilisez le mot de passe `demo!pass123`.
 
 - ![](./media/image149.png)
 
-31. Entrez la commande suivante, suivie du mot de passe `demo !pass123`
+31. Entrez la commande suivante, suivie du mot de passe `demo!pass123`
     lorsque vous y êtes invité :
 
 - `sudo -s`
@@ -1910,7 +1910,7 @@ les détails indiqués ci-dessous
 
 - Évaluation des machines virtuelles
 
-
+&nbsp;
 
 - ![Interface utilisateur graphique, application Description générée
   automatiquement](./media/image163.png)
@@ -1918,11 +1918,11 @@ les détails indiqués ci-dessous
   Interface utilisateur graphique, application Description générée
   automatiquement
 
-
+&nbsp;
 
 - Carte des dépendances des machines virtuelles
 
-
+&nbsp;
 
 - ![Une image contenant le graphique Description générée
   automatiquement](./media/image164.png)
