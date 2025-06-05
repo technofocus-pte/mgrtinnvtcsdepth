@@ -15,8 +15,6 @@
 
 - Azure SQL 数据库等
 
-&nbsp;
-
 - ![](./media/image1.jpg)
 
 在 **SmartHotelHostRG** 中，将创建一个运行嵌套 Hyper-V
@@ -79,7 +77,7 @@ generated](./media/image2.jpg)
     界面的“**主页/资源**”**选项卡**中导航到 **Office 365 租户凭据**
     `https://portal.azure.com` 登录。
 
-2.  在主页上选择 **Resource group**（资源组）。
+2.  在主页上选择 `Resource group`（资源组）。
 
 - ![Graphical user interface, text, application, email Description
   automatically generated](./media/image3.png)
