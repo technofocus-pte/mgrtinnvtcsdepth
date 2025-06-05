@@ -77,7 +77,7 @@ generated](./media/image2.jpg)
     界面的“**主页/资源**”**选项卡**中导航到 **Office 365 租户凭据**
     `https://portal.azure.com` 登录。
 
-2.  在主页上选择 `Resource group`（资源组）。
+2.  在主页上选择 `Resource groups`（资源组）。
 
 - ![Graphical user interface, text, application, email Description
   automatically generated](./media/image3.png)
