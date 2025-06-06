@@ -267,7 +267,7 @@ below details on the **Source details** tab.
 
     - Location: **West US**
 
-    - SQL Server Instance Name: **192.168.0.6**
+    - SQL Server Instance Name: `192.168.0.6`
 
     ![](./media/imagea11.png)
 
