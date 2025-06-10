@@ -350,6 +350,17 @@ virtuels ont été appairés.
 
 3.  Cliquez sur le bouton **Select**
 
+4. Sur la page Azure SQL Database Offline Migration Wizard, fournissez les détails ci-dessous sous l'onglet Source details.
+    - Is your source SQL server instance tracked in Azure? - **No**
+    - Source Infrastructure Type: **Hyper-V**
+    - Subscription – **conserver la valeur par défaut sélectionnée.**
+    - Authentication type: **SQL Authentication**
+    - Resource group: **SmartHotelHostRG**
+    - Location: **West US**
+    - SQL Server Instance Name: **192.168.0.6**
+
+    ![alt text](./media/image30a.png)
+
 4.  Sur la page Assistant Migration hors connexion d'Azure SQL Database,
     fournissez les détails ci-dessous sous l' onglet **Connect to source
     SQL Server** 
