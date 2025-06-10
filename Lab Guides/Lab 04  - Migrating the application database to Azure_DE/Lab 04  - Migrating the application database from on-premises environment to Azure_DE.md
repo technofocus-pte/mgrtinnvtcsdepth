@@ -140,12 +140,12 @@ simulieren, wurden diese beiden VNets per Peering verbunden.
 
   Ein Screenshot eines Computers Beschreibung wird automatisch generiert
 
-5.  **Connect** `mit der virtuellen Maschine` mit dem Benutzernamen
+5.  **Connect** mit der virtuellen Maschine mit dem Benutzernamen
     `demouser` und dem Passwort ` demo demo!pass123`
 
 6.  Starten Sie **Chrome** über die Desktop-Verknüpfung.
 
-7.  Navigieren Sie zum Azure-Portal`, ``https://portal.azure.com` suchen
+7.  Navigieren Sie zum Azure-Portal, `https://portal.azure.com` suchen
     Sie nach `Azure database migration`, und wählen Sie dann aus der
     Dropdownliste **Azure Database Migration Services** aus.
 
@@ -331,6 +331,17 @@ simulieren, wurden diese beiden VNets per Peering verbunden.
 
 3.  Klicken Sie auf die Schaltfläche **Select** 
 
+4. Geben Sie auf der Seite “Azure SQL Database Offline Migration Wizard” auf der Registerkarte Source details die folgenden Details an.
+    - Wird Ihre SQL Server-Quellinstanz in Azure nachverfolgt? – **No**
+    - Typ der Quellinfrastruktur: **Hyper-V**
+    - Abonnement – **Behalten Sie die Standardeinstellung bei.**
+    - Authentifizierungstyp: **SQL Authentication**
+    - Ressourcengruppe: **SmartHotelHostRG**
+    - Standort: **West US**
+    - Name der SQL Server-Instanz: **192.168.0.6**
+
+    ![alt text](./media/image30a.png)
+
 4.  Auf der Seite Azure SQL Database Offline Migration Wizard, geben Sie
     die folgenden Details auf der Registerkarte **Connect to source SQL
     Server** an .
@@ -341,7 +352,7 @@ simulieren, wurden diese beiden VNets per Peering verbunden.
 
     3.  Username: `sa`
 
-    4.  Password: `demo!pass``123`
+    4.  Password: `demo!pass123`
 
     5.  Connection properties – **aktivieren Sie beide
         Kontrollkästchen**
