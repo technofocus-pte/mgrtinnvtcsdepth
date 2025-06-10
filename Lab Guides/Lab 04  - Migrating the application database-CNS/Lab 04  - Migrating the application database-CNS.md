@@ -296,6 +296,17 @@ VNet。为了模拟本地连接，这两个 VNet 已对等互连。
 
 3.  点击 **Select** 按钮
 
+4. 在 Azure SQL Database Offline Migration Wizard页面上，在源详细信息选项卡上提供以下详细信息。
+    - 您的源 SQL Server 实例是否在 Azure 中被跟踪？- No 
+    - 源基础架构类型：Hyper-V
+    - 订阅 - 保留默认选择。
+    - 身份验证类型： SQL Authentication
+    - 资源组：SmartHotelHostRG
+    - 位置： West US 
+    - SQL Server 实例名称：192.168.0.6
+
+    ![alt text](./media/image30a.png)
+
 4.  在 Azure SQL 数据库脱机迁移向导页面上，在**连接到源 SQL Server**
     选项卡上提供以下详细信息。
 
