@@ -303,6 +303,18 @@ VNet にデプロイされます。on-premises接続をシミュレートする�
 
 3.  **Select**ボタンをクリックします
 
+4. Azure SQL Database オフライン移行ウィザード ページで、 [Source details] タブに次の詳細を入力します  。
+
+    - ソース SQL Server インスタンスは Azure で追跡されていますか? - いいえ
+    - ソース・インフラストラクチャ・タイプ: **Hyper-V**
+    - サブスクリプション – デフォルトを選択したままにします。
+    - 認証の種類: **SQL Authentication**
+    - リソース グループ: **SmartHotelHostRG**
+    - 場所: **West US**
+    - SQL Server インスタンス名: **192.168.0.6**
+
+    ![alt text](./media/image30a.png)
+
 4.  Azure SQL データベース オフライン移行ウィザードのページで、**Connect
     to source SQL Server**タブに以下の詳細を入力します。
 
