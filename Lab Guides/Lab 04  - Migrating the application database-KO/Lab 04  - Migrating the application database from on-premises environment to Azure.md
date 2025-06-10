@@ -302,6 +302,17 @@ DMS는 'DMSVnet'이라는 별도의 VNet에 배포됩니다. 온-프레미스 �
 
 3.  **Select** 버튼을 클릭합니다.
 
+4. Azure SQL Database 오프라인 마이그레이션 마법사 페이지에서Source details 탭에 아래 정보를 입력하세요.
+    - Is your source SQL server instance tracked in Azure? - No
+    - Source Infrastructure Type: **Hyper-V**
+    - Subscription – 기본값 유지
+    - 인증 유형: **SQL Authentication**
+    - Resource group: **SmartHotelHostRG**
+    - Location: **West US**
+    - SQL Server Instance Name: **192.168.0.6**
+
+    ![alt text](./media/image30a.png)
+
 4.  Azure SQL Database Offline Migration Wizard페이지에서 **Connect to
     source SQL Server** 탭에 아래 세부 정보를 입력합니다.
 
