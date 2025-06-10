@@ -323,6 +323,17 @@ eseguito il peering di queste due reti virtuali.
 
 3.  Fare clic sul pulsante **Select**
 
+4. Nella pagina Azure SQL Database Offline Migration Wizard, specificare i dettagli seguenti nella scheda Source details.
+    - Is your source SQL server instance tracked in Azure? - **No**
+    - Source Infrastructure Type: **Hyper-V**
+    - Subscription – **mantenere selezionato il valore predefinito.**
+    - Authentication type: **SQL Authentication**
+    - Resource group: **SmartHotelHostRG**
+    - Location: **West US**
+    - SQL Server Instance Name: **192.168.0.6**
+
+    ![alt text](./media/image30a.png)
+
 4.  Nella pagina Migrazione guidata offline del database SQL di Azure
     specificare i dettagli seguenti nella scheda **Connect to source SQL
     Server**.
