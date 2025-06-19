@@ -293,10 +293,8 @@ Managerを閉じないでください。
     マッピングが取得される場合があります。「eyeball」アイコンを使用して確認してください)
     。
 
-    ![Graphical user interface, website Description automatically
-  generated](./media/image43.png)
+    ![](./media/image43.png)
 
-  グラフィカルユーザーインターフェース、ウェブサイトの説明は自動的に生成されます。
 
 6.  **Wait.** 1 ～ 2 分後にブラウザーが開き、Azure Migrate
     アプライアンス構成ウィザードが表示されます (デスクトップ
@@ -309,15 +307,11 @@ Managerを閉じないでください。
 
     ![](./media/image45.png)
 
-
-
 8.  **Set up prerequisites**
     で、インターネット接続と時刻同期を確認するための次の 2
     つの手順が自動的に完了するはずです。
 
     ![](./media/image46.png)
-
-
 
 9.  先ほど Azure ポータルからコピーした**Azure Migrate project keyを、
     Verification of Azure Migrate project
@@ -325,11 +319,9 @@ Managerを閉じないでください。
 
     ![](./media/image47.png)
 
-
-
-  > **注意：**キーがない場合は、Azure Portal の Azure Migrate で**Server
-  > Assessment \> Discover \> Manage existing
-  > appliances**に移動し、キー生成時に指定したアプライアンス名を選択して、対応するキーをコピーします。
+    > **注意：**キーがない場合は、Azure Portal の Azure Migrate で**Server
+    > Assessment \> Discover \> Manage existing
+    > appliances**に移動し、キー生成時に指定したアプライアンス名を選択して、対応するキーをコピーします。
 
 10. **Azure Migrate project
     key** が検証されると、自動更新プロセスが開始されます。
@@ -351,14 +343,10 @@ Managerを閉じないでください。
 
     ![](./media/image51.png)
 
-
-
 14. 新しいブラウザ
     ウィンドウでプロンプトが表示されたら、**Code**を貼り付けて**Next**を選択します。
 
     ![](./media/image52.png)
-
-
 
 15. Azureポータルの資格情報を入力し、**Next**を選択します。**Password**を入力し、**Sign
     in** を選択します。
@@ -371,16 +359,11 @@ Managerを閉じないでください。
 
     ![](./media/image53.png)
 
-
-
     ![](./media/image54.png)
 
 16.  **Continue**を選択します。
 
-    ![A screenshot of a computer error Description automatically
-  generated](./media/image55.png)
-
-
+    ![](./media/image55.png)
 
     ![](./media/image56.png)
 
@@ -389,21 +372,15 @@ Managerを閉じないでください。
 
     ![](./media/image57.png)
 
-
-
 18. 登録が完了したら、次のパネル**Manage credentials and discovery
     sources**に進みます。
 
     ![](./media/image58.png)
 
-
-
 19. 資格情報と検出ソースの管理で**Step 1: Provide Hyper-V host
     credentials**に**Add credentials**を選択します。
 
     ![](./media/image59.png)
-
-
 
 20. **Friendly
     name**に「`hostlogin` 」、username に「`demouser`」と入力し、アプライアンスがVMの検出に使用するHyper-Vホスト/クラスターのパスワードを手動で`demo!pass123`
@@ -411,13 +388,11 @@ Managerを閉じないでください。
 
     ![](./media/image60.png)
 
+    > **注意：** Azure
+    > Migrateアプライアンスがローカルキーボードのマッピングを取得していない可能性があります。パスワードボックスの「eyeball」アイコンを選択して、パスワードが正しく入力されていることを確認してください。
 
-
-  > **注意：** Azure
-  > Migrateアプライアンスがローカルキーボードのマッピングを取得していない可能性があります。パスワードボックスの「eyeball」アイコンを選択して、パスワードが正しく入力されていることを確認してください。
-
-  > ***注意：***「Add more」ボタンを介した Hyper-V VM
-  > の検出では、複数の資格情報がサポートされています。
+    > ***注意：***「Add more」ボタンを介した Hyper-V VM
+    > の検出では、複数の資格情報がサポートされています。
 
 21. **Step 2: Provide Hyper-V host/cluster details**に、**Add discovery
     source** を選択して、Hyper-V ホスト/クラスターの IP アドレス/FQDN
@@ -432,11 +407,9 @@ Managerを閉じないでください。
 
     ![](./media/image62.png)
 
-
-
-  > **注意：** 一度に**Add single item**することも、**Add multiple
-  > items**こともできます。また、 **Import
-  > CSV**を使用してHyper-Vホスト/クラスターの詳細を提供するオプションもあります。
+    > **注意：** 一度に**Add single item**することも、**Add multiple
+    > items**こともできます。また、 **Import
+    > CSV**を使用してHyper-Vホスト/クラスターの詳細を提供するオプションもあります。
 
 23. アプライアンスは、追加された Hyper-V
     ホスト/クラスターへの接続を検証し、各ホスト/クラスターに対する**Validation
@@ -444,13 +417,13 @@ Managerを閉じないでください。
 
     ![](./media/image63.png)
 
-  **注意：** 検出ソースを追加する場合:
-  - 正常に検証されたホスト/クラスターについては、IP アドレス/FQDN
-    を選択して詳細を表示できます。
-  - ホストの検証に失敗した場合は、表のステータス列で検証失敗を選択してエラー内容を確認し、問題を修正して再度検証してください。
-  - ホストまたはクラスターを削除するには、 **Delete**を選択します。
-  - クラスターから特定のホストを削除することはできません。削除できるのはクラスター全体のみです。
-  - クラスター内の特定のホストに問題がある場合でも、クラスターを追加できます。
+    **注意：** 検出ソースを追加する場合:
+    - 正常に検証されたホスト/クラスターについては、IP アドレス/FQDN
+        を選択して詳細を表示できます。
+    - ホストの検証に失敗した場合は、表のステータス列で検証失敗を選択してエラー内容を確認し、問題を修正して再度検証してください。
+    - ホストまたはクラスターを削除するには、 **Delete**を選択します。
+    - クラスターから特定のホストを削除することはできません。削除できるのはクラスター全体のみです。
+    - クラスター内の特定のホストに問題がある場合でも、クラスターを追加できます。
 
 24. スイッチが有効になっていることを確認して、**Add
     credentials**をクリックします。
@@ -696,7 +669,7 @@ CSV
 
 
 
-9.  **Build business case (Preview)** ページで、以下の詳細を入力し、**Build business
+2.  **Build business case (Preview)** ページで、以下の詳細を入力し、**Build business
     case**ボタンをクリックします。
 
     - ビジネスケース名 -`BCase1 from the imported CSV`
@@ -713,8 +686,6 @@ CSV
     - プリペイド割引（％）- **0**
 
     ![](./media/image84.jpg)
-
-
 
 2.  以下のような通知が届くはずで。
 
