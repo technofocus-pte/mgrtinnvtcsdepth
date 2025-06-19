@@ -491,9 +491,9 @@ Managerを閉じないでください。
 
 
 31. ラボ VM に戻り、Edge ブラウザーを開いて Azure Portal
-    `(https://portal.azure.com)に移動し`、Office 365
-    テナントの資格情報でサインインして、 **Azure
-    Migrate**ブレードに戻ります。
+    `https://portal.azure.com` に移動し、Office 365
+    テナントの資格情報でサインインして、 `Azure
+    Migrate` ブレードに戻ります。
 
     ![Graphical user interface, text, application, email Description
   automatically generated](./media/image71.png)
