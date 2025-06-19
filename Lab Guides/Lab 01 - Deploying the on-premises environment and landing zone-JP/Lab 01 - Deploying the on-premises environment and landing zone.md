@@ -18,7 +18,7 @@
 
 &nbsp;
 
-- ![](./media/image1.jpg)
+    ![](./media/image1.jpg)
 
 **SmartHotelHostRG**,
 では、4つのネストされたVMを持つネストされたHyper-Vを実行しているＶＭが作成されます。これは、このラボで評価して、移行する「on-premises」環境を表しています。
@@ -84,31 +84,27 @@ generated](./media/image2.jpg)
 
 2.  ホームページで**Resource group**を選択します。 
 
-- ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image3.png)
+    ![](./media/image3.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される。
+
 
 3.  **SmartHotelHostRG**を選択します。
 
-- ![Graphical user interface, text, application Description
-  automatically generated](./media/image4.png)
+    ![](./media/image4.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される。
+
 
 4.  前のモジュールのテンプレートによってデプロイされた**SmartHotelHost** VMを選択します。
 
-- ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image5.png)
+    ![](./media/image5.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される。
+
 
 5.  **public IP address**をメモします。
 
-- ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image6.png)
+    ![](./media/image6.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される。
+
 
 6.  ブラウザタブを開き、 **Public IP of the
     SmartHotelHostVM **（前の手順でメモしたもの）に移動します。SmartHotelHost上の
@@ -116,10 +112,9 @@ generated](./media/image2.jpg)
     上で実行されている**SmartHotel**アプリケーションが表示されます。（このアプリケーションは特に機能はありませんが、ページを更新してゲストリストを確認したり、
     **「CheckIn」**または**「CheckOut」**を選択してステータスを切り替えたりすることはできます。)
 
-- ![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
   generated](./media/image7.png)
 
-  グラフィカルユーザーインターフェース、アプリケーションの説明が自動的に生成される。
 
   > **注意：** **SmartHotel applicationが表示されない**場合は、10
   > 分待ってからもう一度お試しください。テンプレートのデプロイ開始から**at
@@ -133,37 +128,33 @@ generated](./media/image2.jpg)
 
 1.  **SmartHotelHost** VM タブに戻り、**Home**を選択します。
 
-- ![Graphical user interface, application, email Description
+    ![Graphical user interface, application, email Description
   automatically generated](./media/image8.png)
 
-  グラフィカルユーザーインターフェース、アプリケーション、電子メールの説明が自動的に生成されます
 
 2.  **Resource Groups** サービスを選択します。
 
-- ![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
   generated](./media/image9.png)
 
-  グラフィカルユーザーインターフェース、アプリケーションの説明は自動的に生成されます
+  
 
 3.  **SmartHotelRG**リソース グループを選択します。
 
-- ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image10.png)
+    ![](./media/image10.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される
+  
 
-7.  **Virtual Network, Bastion resource, Application Gateway, SQL
+4.  **Virtual Network, Bastion resource, Application Gateway, SQL
     Server**と**Database**が利用可能であることに注意してください。
 
-- ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image11.png)
+    ![](./media/image11.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される
+  
 
-  ![Graphical user interface, text, application, email Description
-  automatically generated](./media/image12.png)
+    ![](./media/image12.png)
 
-  グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される。
+
 
 ### まとめ
 
@@ -180,16 +171,16 @@ SQL Database で構成されています。
 ![Graphical user interface, application Description automatically
 generated](./media/image13.png)
 
-グラフィカルユーザーインターフェース、アプリケーションの説明は自動的に生成されます
+
 
 **SmartHotelRG内のAzure Landing zone**リソース 
 
 ![Graphical user interface, text, application, email Description
 automatically generated](./media/image11.png)
 
-グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される
+
 
 ![Graphical user interface, text, application, email Description
 automatically generated](./media/image12.png)
 
-グラフィカルユーザーインターフェース、テキスト、アプリケーション、電子メールの説明が自動的に生成される
+

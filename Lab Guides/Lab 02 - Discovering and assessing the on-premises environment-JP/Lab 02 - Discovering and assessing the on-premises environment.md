@@ -13,16 +13,16 @@ Azure Migration プロジェクト内に作成します。
 そうするために、SmartHotelHost 上に Azure
 MigrateアプライアンスをVMとしてデプロイし、必要なDiscoveryタスクを実行する必要があります。
 
-> **重要：**このラボを開始する前に、on-premise環境のデプロイ**（Lab 1-
+> **重要：** このラボを開始する前に、on-premise環境のデプロイ**Lab 1-
 > Deploying and verifying the on-premises environment and landing
-> zone）** に少なくとも 30 ～ 40 分かかるようにしてください。
+> zone** に少なくとも 30 ～ 40 分かかるようにしてください。
 
 ### タスク１： Azure Migrate プロジェクトの作成と評価・移行ツールの追加する
 
 このタスクでは、Azure Migrate
 プロジェクトを作成し、評価および移行ツールを選択します。
 
-> **注意：**このラボでは、Azure Migrate 内で Microsoft
+> **注意：** このラボでは、Azure Migrate 内で Microsoft
 > が提供する評価および移行ツールを使用します。Azure Migrate
 > には、評価と移行の両方のために、多数のサードパーティ製ツールも統合されています。これらのサードパーティ製ツールについては、ラボの外で調査することをおすすめします。
 
@@ -36,22 +36,19 @@ MigrateアプライアンスをVMとしてデプロイし、必要なDiscovery�
 
     ![](./media/image2.png)
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image3.png)
+    ![](./media/image3.png)
 
 
 
 3.  **Discover, assess and migrate**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image4.png)
+    ![](./media/image4.png)
 
   
 
 4.  **Create project**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image5.png)
+    ![](./media/image5.png)
 
   
 
@@ -68,8 +65,7 @@ MigrateアプライアンスをVMとしてデプロイし、必要なDiscovery�
 
 7.  The Azure Migrate
     のデプロイが開始されます。完了すると、現在の移行プロジェクトの**Azure
-    Migrate: Discovery and assessment**パネルと**Azure Migrate: Server
-    Migration**パネルが以下のように表示されます。
+    Migrate: Discovery and assessment** パネルと **Migration and modernization** パネルが以下のように表示されます。
 
     ![](./media/image9.png)
 
@@ -90,16 +86,14 @@ Hyper-V サーバーと通信してon-premisesVM
     Assessment**で、**Discover**を選択し、**Using
     appliance**を選択して**Discover machines**ブレードを開きます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image10.jpg)
+    ![](./media/image10.jpg)
 
 
 
 2.  「**Are your servers virtualized?**」の下**Yes, with
     Hyper-V**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image11.png)
+    ![](./media/image11.png)
 
 
 
@@ -107,18 +101,16 @@ Hyper-V サーバーと通信してon-premisesVM
     Migrateアプライアンス名として「`SHAppl@lab.LabInstance.Id` **Generate
     key**を選択して、必要な Azure リソースの作成を開始します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image12.png)
+    ![](./media/image12.png)
 
 
 
     ![](./media/image13.png)
 
-3.  キーが生成されるまで**Wait** **。**その後、 **Azure Migrate project
+3.  キーが生成されるまで**Wait** 。その後、 **Azure Migrate project
     key**をクリップボードにコピーし、**notepad**に保存してください。この**Key**は、以降のタスクで使用できます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image14.png)
+    ![](./media/image14.png)
 
 
 
@@ -142,23 +134,20 @@ Hyper-V サーバーと通信してon-premisesVM
 
 7.  **Connect**を選択して、ドロップダウンから**Connect** を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image18.jpg)
+    ![](./media/image18.jpg)
 
 
 
 8.  **Download RDP File**にクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image19.jpg)
+    ![](./media/image19.jpg)
 
 
 
 9.  通知の**Keep**ボタンをクリックし、**Open
     file**をクリックして接続します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image20.jpg)
+    ![](./media/image20.jpg)
 
 10. ユーザー名「`demouser`」、パスワード「`demo!pass123`」で仮想マシンに**Connect**をクリックします。
 
@@ -179,8 +168,7 @@ Hyper-V サーバーと通信してon-premisesVM
 13. ファイルがダウンロードされたら、ダウンロードしたファイルをクリックし、**Shown
     in folder**オプションを選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image25.png)
+    ![](./media/image25.png)
 
 14. zipファイルをダブルクリックします‐**AzureMigrateAppliance**
 
@@ -217,23 +205,21 @@ Hyper-V サーバーと通信してon-premisesVM
     ![](./media/image32.png)
 
 21. **Locate Folder**ステップで、**Browse**を選択し、`F:\VirtualMachines\AzureMigrateAppliance`に移動し（前のステップで***extracted***ものを選択するはずです)
-    、**Select Folder**を選択して、**Next**を選択します**。**
+    、**Select Folder**を選択して、**Next**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image33.png)
+    ![](./media/image33.png)
 
 
 
 22. **Select Virtual Machine**ステップでは、 **AzureMigrateAppliance**
-    VM が既に選択されているはずです。**Next**を選択します。
+    VM が既に選択されているはずです。**Next** を選択します。
 
     ![](./media/image34.png)
 
 23. **Choose Import Type**ステップでは、デフォルト設定を**Register the
-    virtual machine in-place**にして、**Next**を選択します。
+    virtual machine in-place**にして、**Next** を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image35.png)
+    ![](./media/image35.png)
 
 
 
@@ -241,12 +227,11 @@ Hyper-V サーバーと通信してon-premisesVM
     Migrateアプライアンスで以前使用されていた仮想スイッチが見つからないというエラーが表示されます。**Connection**ドロップダウンから**Azure
     Migrate Switch**を選択し、**Next**を選択してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image36.png)
+    ![](./media/image36.png)
 
 
 
-  > ***注意：***Azure
+  > ***注意：*** Azure
   > Migrateアプライアンスは、Azureにデータをアップロードするためにインターネットへのアクセスが必要です。また、Hyper-Vホストへのアクセスも必要です。ただし、Hyper-Vホスト上で実行されているアプリケーションVMに直接アクセスする必要はありません。アプリケーション環境を保護するため、Azure
   > Migrateアプライアンスは、アプリケーションと同じサブネットではなく、Hyper-V内の別のサブネットにデプロイする必要があります。
 
@@ -320,10 +305,9 @@ Managerを閉じないでください。
     ![](./media/image44.png)
 
 7.  アプライアンス設定ウィザードを開くと、ライセンス条項が記載されたポップアップが表示されます。**I
-    agree**を選択して条項に同意してください**。**
+    agree** を選択して条項に同意してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image45.png)
+    ![](./media/image45.png)
 
 
 
@@ -331,8 +315,7 @@ Managerを閉じないでください。
     で、インターネット接続と時刻同期を確認するための次の 2
     つの手順が自動的に完了するはずです。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image46.png)
+    ![](./media/image46.png)
 
 
 
@@ -340,8 +323,7 @@ Managerを閉じないでください。
     Verification of Azure Migrate project
     key**セクションに貼り付けて、**Verify**ボタンをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image47.png)
+    ![](./media/image47.png)
 
 
 
@@ -352,8 +334,7 @@ Managerを閉じないでください。
 10. **Azure Migrate project
     key** が検証されると、自動更新プロセスが開始されます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image48.png)
+    ![](./media/image48.png)
 
 
 
@@ -368,21 +349,19 @@ Managerを閉じないでください。
 13. 新しいウィンドウが開き、デバイスコードが表示されます。**Copy code &
     Login**を選択してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image51.png)
+    ![](./media/image51.png)
 
 
 
 14. 新しいブラウザ
     ウィンドウでプロンプトが表示されたら、**Code**を貼り付けて**Next**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image52.png)
+    ![](./media/image52.png)
 
 
 
 15. Azureポータルの資格情報を入力し、**Next**を選択します。**Password**を入力し、**Sign
-    in**を選択します**。**
+    in** を選択します。
 
 - > **注意：** ネストされた仮想化のため、@ 記号は 2
   > として表示されます。したがって、資格情報を修正し、キーボードを使用してパスワードを入力するか、ラボ
@@ -390,8 +369,7 @@ Managerを閉じないでください。
   > に切り替えて、AzureMigrate アプライアンス VM
   > にパスワードを貼り付けます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image53.png)
+    ![](./media/image53.png)
 
 
 
@@ -409,24 +387,21 @@ Managerを閉じないでください。
 17. **Azure Migrate Appliance** タブに戻ると、**Appliance
     registration**自動的に開始されます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image57.png)
+    ![](./media/image57.png)
 
 
 
 18. 登録が完了したら、次のパネル**Manage credentials and discovery
     sources**に進みます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image58.png)
+    ![](./media/image58.png)
 
 
 
 19. 資格情報と検出ソースの管理で**Step 1: Provide Hyper-V host
     credentials**に**Add credentials**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image59.png)
+    ![](./media/image59.png)
 
 
 
@@ -434,8 +409,7 @@ Managerを閉じないでください。
     name**に「`hostlogin` 」、username に「`demouser`」と入力し、アプライアンスがVMの検出に使用するHyper-Vホスト/クラスターのパスワードを手動で`demo!pass123`
     と入力します。**Save**にクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image60.png)
+    ![](./media/image60.png)
 
 
 
@@ -449,16 +423,14 @@ Managerを閉じないでください。
     source** を選択して、Hyper-V ホスト/クラスターの IP アドレス/FQDN
     と、ホスト/クラスターに接続するための資格情報のフレンドリ名を指定します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image61.png)
+    ![](./media/image61.png)
 
 
 
 22. **Add single item**を選択し、\[IP Address / FQDN\]
     の下に`SmartHotelHost`と入力し、マップ資格情報としてドロップダウンから**hostlogin**を選択して、**Save**にクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image62.png)
+    ![](./media/image62.png)
 
 
 
@@ -498,15 +470,13 @@ Managerを閉じないでください。
 
     - Password –`demo!pass123`を`手動で入力してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image65.png)
+    ![](./media/image65.png)
 
 
 
 26. 通知を閉じます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image66.png)
+    ![](./media/image66.png)
 
 
 
@@ -521,27 +491,23 @@ Managerを閉じないでください。
 
     - パスワード –`demo!pass123`を`手動で入力してください
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image67.png)
+    ![](./media/image67.png)
 
 
 
 28. 通知を閉じます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image66.png)
+    ![](./media/image66.png)
 
 
 
 29. 下にスクロールして、**Start Discovery** ボタンをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image68.png)
+    ![](./media/image68.png)
 
 
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image69.png)
+    ![](./media/image69.png)
 
 
 
@@ -549,8 +515,7 @@ Managerを閉じないでください。
     initiated**と表示されるまでお待ちください。これには 10～13
     分かかります。検出が正常に開始されたら、テーブル内の各ホスト/クラスターの検出ステータスを確認できます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image70.png)
+    ![](./media/image70.png)
 
 
 
@@ -565,8 +530,7 @@ Managerを閉じないでください。
 32. **Servers, databases and web
     apps**を選択し、**Refresh**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image72.png)
+    ![](./media/image72.png)
 
 
 
@@ -575,8 +539,7 @@ Managerを閉じないでください。
 33. **Azure Migrate: Server
     Assessment** の下に、これまでに検出されたサーバーの数が表示されます。検出がまだ進行中の場合は、検出されたサーバーが**5**台になるまで定期的に**Refresh** を選択してください。これには数分かかる場合があります。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image74.png)
+    ![](./media/image74.png)
 
 
 
@@ -648,8 +611,7 @@ CSV
     web**が選択されていることを確認し、**Discover**ボタンを選択して**Using
     import**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image75.jpg)
+    ![](./media/image75.jpg)
 
 
 
@@ -657,15 +619,13 @@ CSV
     template.csv**という名前の CSV ファイルをアップロードし、
     **Import**を選択してファイルを読み取ります。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image76.png)
+    ![](./media/image76.png)
 
 
 
 3.  インポートによりファイル レコードの処理が開始されます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image77.png)
+    ![](./media/image77.png)
 
 
 
@@ -680,8 +640,7 @@ CSV
 
 6.  検出ブレードを閉じて、**Refresh**ボタンをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image80.jpg)
+    ![](./media/image80.jpg)
 
 
 
@@ -689,16 +648,14 @@ CSV
 
     - **Discovered Servers – 45**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image81.jpg)
+    ![](./media/image81.jpg)
 
 
 
 8.  **Discovered items**をクリックし、**Import
     based**タブを選択すると、インポートされた40台のサーバーの詳細が表示されます。ドロップダウンメニューからプロジェクトを選択してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image82.jpg)
+    ![](./media/image82.jpg)
 
 
 
@@ -735,8 +692,7 @@ CSV
 1.  C移行目標の下にある**Servers, databases and web
     apps**をクリックし、**Build business case**ボタンを選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image83.jpg)
+    ![](./media/image83.jpg)
 
 
 
@@ -756,15 +712,13 @@ CSV
 
     - プリペイド割引（％）- **0**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image84.jpg)
+    ![](./media/image84.jpg)
 
 
 
 2.  以下のような通知が届くはずで。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image85.png)
+    ![](./media/image85.png)
 
 
 
@@ -774,8 +728,7 @@ CSV
 
 4.  仮定が計算されると、ページは以下のように表示されます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image87.png)
+    ![](./media/image87.png)
 
 
 
@@ -819,8 +772,7 @@ CSV
 
     - **OS Distribution**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image92.png)
+    ![](./media/image92.png)
 
 
 
@@ -864,7 +816,7 @@ CSV
     ![](./media/image97.png)
 
 12. 詳細ブレードを閉じて、前提条件の下の**Azure
-    cost**をクリックします**。**
+    cost**をクリックします。
 
     ![](./media/image98.png)
 
@@ -882,29 +834,25 @@ CSV
 
     - **Virtualization software – VMware**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image99.png)
+    ![](./media/image99.png)
 
 
 
 15. **Storage**をクリックして設定を確認します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image100.png)
+    ![](./media/image100.png)
 
 
 
 16. **Network**をクリックして設定を確認します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image101.png)
+    ![](./media/image101.png)
 
 
 
 17. **Security**タブをクリックして設定を確認します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image102.png)
+    ![](./media/image102.png)
 
 
 
@@ -913,15 +861,13 @@ CSV
 
 19. 設定を確認するには**Labor**タブをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image104.png)
+    ![](./media/image104.png)
 
 
 
 20. 設定を確認するには**Facilities**タブをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image105.png)
+    ![](./media/image105.png)
 
 
 
@@ -934,13 +880,12 @@ CSV
 23. Azure Migrate ページから、\[サーバー、データベース、Web アプリ\]
     をクリックし、 **Build Business case**をクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image83.jpg)
+    ![](./media/image83.jpg)
 
 
 
 24. **Build business case
-    (Preview)**ページで、以下の詳細を入力し、**Build business
+    (Preview)** ページで、以下の詳細を入力し、**Build business
     case**ボタンをクリックします。
 
     - ビジネスケース名 - `BCase2 Migrate Appliance`
@@ -956,8 +901,7 @@ CSV
 
     - プリペイド割引（％） - **0**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image106.jpg)
+    ![](./media/image106.jpg)
 
 
 
@@ -967,15 +911,13 @@ CSV
 
 26. 数分後に更新ボタンをクリックしてください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image108.png)
+    ![](./media/image108.png)
 
 
 
 27. 仮定が計算されると、ページは以下のように表示されます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image109.png)
+    ![](./media/image109.png)
 
 
 
@@ -1003,17 +945,15 @@ CSV
 
 29. **BCase2 Migrate Appliance –** ビジネス ケースを確認したら、Azure
     Migrate ページに戻り、 **Servers, databases and web
-    apps**の下の**Overview**ボタンをクリックします**。**
+    apps**の下の**Overview**ボタンをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image110.jpg)
+    ![](./media/image110.jpg)
 
 
 
 30. マネージの下**Business cases**をクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image111.png)
+    ![](./media/image111.png)
 
 
 
@@ -1024,8 +964,7 @@ CSV
 
     - 家電製品
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image112.png)
+    ![](./media/image112.png)
 
 
 
@@ -1038,8 +977,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
     assessment**の下の**Assess -\> Azure
     VM** を選択して、新しい移行評価を開始します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image113.jpg)
+    ![](./media/image113.jpg)
 
 
 
@@ -1051,8 +989,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 
     - 評価設定の下にある**Edit**リンクをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image114.png)
+    ![](./media/image114.png)
 
 
 
@@ -1070,8 +1007,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 
     - VM シリーズ – **Select All**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image115.jpg)
+    ![](./media/image115.jpg)
 
 
 
@@ -1081,8 +1017,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 5.  Basicsタブに戻り、**Next**: **Select servers to
     assess**ボタンをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image116.jpg)
+    ![](./media/image116.jpg)
 
 
 
@@ -1100,8 +1035,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 
 7.  **Create assessment**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image118.jpg)
+    ![](./media/image118.jpg)
 
 
 
@@ -1113,29 +1047,25 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 9.  Azure Migrate サーバー、データベース、Web アプリ
     ページの評価で1を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image119.jpg)
+    ![](./media/image119.jpg)
 
 
 
 10. リストから**SmartHotelAssessment**をクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image120.jpg)
+    ![](./media/image120.jpg)
 
 
 
 11. 評価の概要を少し調べてみましょう。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image121.png)
+    ![](./media/image121.png)
 
 
 
 12. **Settings**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image122.png)
+    ![](./media/image122.png)
 
 
 
@@ -1145,8 +1075,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 
     - パーセンタイル使用率 – **95^(th)**
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image123.jpg)
+    ![](./media/image123.jpg)
 
 
 
@@ -1166,8 +1095,7 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
     VMの場合、VM
     の移行準備状況に関する具体的な懸念事項がリストされていることに注意してください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image126.jpg)
+    ![](./media/image126.jpg)
 
 
 
@@ -1196,28 +1124,24 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 17. **Azure Migrate**ページの**Servers, database and web apps**, **Azure
     Migrate: Discovery and assessment**で、 **Overview**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image127.jpg)
+    ![](./media/image127.jpg)
 
 
 
 18. **Manage**の下で**Appliances**を選択します。**Refresh
-    services**を選択します**。**
+    services**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image128.jpg)
-
+    ![](./media/image128.jpg)
 
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image129.jpg)
+
+    ![](./media/image129.jpg)
 
 
 
 19. 更新操作が完了するまでお待ちください。最新の情報が表示されるはずです。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image130.png)
+    ![](./media/image130.png)
 
 
 
@@ -1249,25 +1173,22 @@ workspace**を作成し、次に移行対象の VM
 2.  グループの詳細を表示するには、**SmartHotel
     VM**グループを選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image132.png)
+    ![](./media/image132.png)
 
 
 
 3.  各 VM の**Dependencies**ステータスが**Requires agent
-    installation**になっていることに注意してください**。smarthotelweb1
-    VM**に対して**Requires agent installation**を選択します。
+    installation **になっていることに注意してください**。smarthotelweb1
+    VM** に対して **Requires agent installation** を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image133.png)
+    ![](./media/image133.png)
 
 
 
 4.  **Dependencies**ブレードで、**Configure Log Analytics
-    workspace**を選択します**。
+    workspace** を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image134.png)
+    ![](./media/image134.png)
 
 
 
@@ -1279,8 +1200,7 @@ workspace**を作成し、次に移行対象の VM
 6.  ワークスペースがデプロイされるのを待ちます。**Workspace
     ID** と**Workspace Key**をメモにしてください。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image135.jpg)
+    ![](./media/image135.jpg)
 
 
 
@@ -1289,8 +1209,7 @@ workspace**を作成し、次に移行対象の VM
     で**notepad**に書き留めた**Workspace ID and
     key** と一緒に貼り付けます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image136.png)
+    ![](./media/image136.png)
 
 
 
@@ -1307,8 +1226,7 @@ workspace**を作成し、次に移行対象の VM
 9.  **Hyper-V Manager**で、
     **smarthotelweb1**を選択し、**Connect**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image137.png)
+    ![](./media/image137.png)
 
 
 
@@ -1343,8 +1261,7 @@ workspace**を作成し、次に移行対象の VM
     the agent to Azure Log Analytics
     (OMS)** に接続するを選択し、**Next**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image142.png)
+    ![](./media/image142.png)
 
 
 
@@ -1352,23 +1269,20 @@ workspace**を作成し、次に移行対象の VM
     「Azure Cloud」ドロップダウンから**Azure
     Commercial**を選択します。**Next**を選択し、残りのページでエージェントを**install**します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image143.png)
+    ![](./media/image143.png)
 
 
 
 16. 残りのセットアップはデフォルトオプションで続行し、**Finish**をクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image144.png)
+    ![](./media/image144.png)
 
 
 
 17. **Dependency Agent Windows
     installer** へのリンクをブラウザのアドレスバーに貼り付けます。インストーラーを**Run**し、インストールウィザードに従ってインストールを完了します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image145.png)
+    ![](./media/image145.png)
 
     > **注意：** Dependency Agent をインストールするときにワークスペース
     > ID
@@ -1418,8 +1332,7 @@ workspace**を作成し、次に移行対象の VM
     the agent to Azure Log Analytics
     (OMS)** を選択し、**Next**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image142.png)
+    ![](./media/image142.png)
 
 
 
@@ -1427,23 +1340,20 @@ workspace**を作成し、次に移行対象の VM
     「Azure Cloud」ドロップダウンから**Azure
     Commercial**を選択します。**Next**を選択し、残りのページでエージェントを**install**します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image143.png)
+    ![](./media/image143.png)
 
 
 
 13. 残りのセットアップはデフォルトオプションで続行し、**Finish**をクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image144.png)
+    ![](./media/image144.png)
 
 
 
 27. **Dependency Agent Windows
     installer** へのリンクをブラウザのアドレスバーに貼り付けます。インストーラーを**Run**し、インストールウィザードに従ってインストールを完了します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image145.png)
+    ![](./media/image145.png)
 
     > **注意：** Dependency Agent をインストールするときにワークスペース
     > ID
@@ -1460,8 +1370,7 @@ workspace**を作成し、次に移行対象の VM
 28. **SmartHotelHost**との RDP セッションに戻り、デスクトップ
     ショートカットを使用してコマンド プロンプトを開きます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image148.png)
+    ![](./media/image148.png)
 
 
 
@@ -1489,7 +1398,7 @@ workspace**を作成し、次に移行対象の VM
 
 
 32. これにより、ターミナルセッションに**elevated/root
-    privileges**が付与されます**。**
+    privileges**が付与されます。
 
 33. \and\を前にコピーした値に置き換えて、次のコマンドを入力します。
 
@@ -1511,7 +1420,7 @@ workspace**を作成し、次に移行対象の VM
   コンピュータプログラムのスクリーンショット 自動生成された説明。
 
 36. 次のコマンドを入力し、**\< Workspace
-    ID\>**を先ほどコピーした値に置き換えます。
+    ID\>** を先ほどコピーした値に置き換えます。
 
 - `/opt/microsoft/omsagent/bin/service_control restart <Workspace ID>`
 
@@ -1531,8 +1440,7 @@ workspace**を作成し、次に移行対象の VM
 
 - `sh InstallDependencyAgent-Linux64.bin -s`
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image157.png)
+    ![](./media/image157.png)
 
 
 
@@ -1557,43 +1465,37 @@ Dependency Agent をデプロイして、Azure Migrate
     Migrate: Discovery and assessment** の下にある**Groups**の番号**1**
     のリンクをクリックします。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image158.png)
+    ![](./media/image158.png)
 
 
 
 2.  グループの詳細を表示するには、 **SmartHotel
     VMグループ**を選択します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image132.png)
+    ![](./media/image132.png)
 
 
 
 3.  すべての VM の Dependency Agent
     のステータスが**Installed**済みになっていることを確認します。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image159.png)
+    ![](./media/image159.png)
 
 
 
 4.  Click on **View dependencies**.
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image160.png)
+    ![](./media/image160.png)
 
 
 
 5.  依存関係ビューを少し見てみましょう。各サーバーを展開すると、そのサーバーで実行されているプロセスが表示されます。プロセスを選択すると、プロセス情報が表示されます。各サーバーがどのような接続を行っているかを確認できます。
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image161.png)
+    ![](./media/image161.png)
 
 
 
-    ![A screenshot of a computer Description automatically
-  generated](./media/image162.png)
+    ![](./media/image162.png)
 
 
 
