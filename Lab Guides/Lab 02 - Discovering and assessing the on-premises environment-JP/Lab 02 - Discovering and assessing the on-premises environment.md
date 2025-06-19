@@ -104,8 +104,7 @@ Hyper-V サーバーと通信してon-premisesVM
 
 
 8.   **1: Generate project key**で、 Hyper-V VMsの検出用に設定するAzure
-    Migrateアプライアンス名として「`SHApplXXXXXX`（**XXXXXX**
-    はランダムな数字に置き換えてください）を入力します。 **Generate
+    Migrateアプライアンス名として「`SHAppl@lab.LabInstance.Id` **Generate
     key**を選択して、必要な Azure リソースの作成を開始します。
 
     ![A screenshot of a computer Description automatically
@@ -1274,8 +1273,7 @@ workspace**を作成し、次に移行対象の VM
 
 5.  新しいLog
     Analyticsワークスペースを作成します。ワークスペース名には、
-    `AzureMigrateWSXXXXXX `（
-    **XXXXXX**はランダムな数字に置き換えてください）を使用してください。リストからLog
+    `AzureMigrateWS@lab.LabInstance.Id` を使用してください。リストからLog
     Analyticsワークスペースの場所を選択し、**Configure**を選択します。
 
 6.  ワークスペースがデプロイされるのを待ちます。**Workspace

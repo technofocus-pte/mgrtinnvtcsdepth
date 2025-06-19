@@ -48,8 +48,7 @@ Account**を作成します。
 
     - リソース グループ: **AzureMigrateRG**
 
-    - ストレージ アカウント名: `migstrgXXXXXX `\[ **XXXXXX**
-      をランダムな数字に置き換えます\]
+    - ストレージ アカウント名: `migstrg@lab.LabInstance.Id`
 
     - 場所: **West US.**
 
@@ -224,7 +223,7 @@ Account**へのプライベートで安全なアクセスを許可します。
 
 1.  **AzureMigrateRG**リソース
     グループに移動し、下の画像に示すように、リストされているレプリケーション
-    ストレージ アカウント**migstrgXXXXXX**をクリックします。
+    ストレージ アカウント**migstrg@lab.LabInstance.Id**をクリックします。
 
 - ![A screenshot of a computer Description automatically
   generated](./media/image21.jpg)
@@ -551,7 +550,7 @@ Server Migration サービスへのレプリケーションを構成して有効
 5.  **Target
     settings**タブで、サブスクリプションと既存の**SmartHotelRG**リソースグループを選択します。
     **Cache storage
-    account**で**migstrgXXXXXX**ストレージアカウントを選択し、 **Virtual
+    account**で**migstrg@lab.LabInstance.Id**ストレージアカウントを選択し、 **Virtual
     Network**で**SmartHotelVNet**を選択します。サブネットで**SmartHotel**を選択します。**Next**を選択します。
 
 - ![A screenshot of a computer Description automatically
