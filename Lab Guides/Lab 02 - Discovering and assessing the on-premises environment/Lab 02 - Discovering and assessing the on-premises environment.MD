@@ -112,8 +112,7 @@ generated](./media/image10.jpeg)
 generated](./media/image11.png)
 
 3.  In **1: Generate project key**,
-    provide `SHApplXXXXXX` (substitute **XXXXXX** with random
-    number) as name for the Azure Migrate appliance that you will set up
+    provide `SHAppl@lab.LabInstance.Id` as name for the Azure Migrate appliance that you will set up
     for discovery of Hyper-V VMs. Select **Generate key** to start the
     creation of the required Azure resources.
 
@@ -175,7 +174,7 @@ generated](./media/image20.jpeg)
     ![](./media/image23.png)
 
 13. Open the Chrome browser on the **SmartHotelHost** VM and paste the
-    copied link for the Azure Migrate appliance from the Notepad, it
+    copied link `https://go.microsoft.com/fwlink/?linkid=2191848`for the Azure Migrate appliance from the Notepad, it
     should start downloading the file
 
     ![](./media/image24.png)
