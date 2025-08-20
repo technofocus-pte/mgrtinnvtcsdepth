@@ -36,6 +36,18 @@ options outside of this lab.
     to `https://portal.azure.com` and log in with your **Office 365
     tenant credentials**.
 
+2.  In search bar type `resource groups` and select **Resource Groups**
+
+    ![](./media/image2a.png)
+
+2. Click on **+ Create** button, the provide the name as `AzureMigrateRG` and Region should be **West US**, click on the **Review + create** button.
+
+    ![](./media/image2b.png)
+
+2. Click on the **Create** button
+
+    ![](./media/image2c.png)
+
 2.  In search bar type `Azure Migrate` and select **Azure
     Migrate** to open the **Azure Migrate Overview** blade, shown below.
 
@@ -54,17 +66,14 @@ generated](./media/image4.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image5.png)
 
-5.  Select the appropriate Subscription and create
-    a new resource group named `AzureMigrateRG`
-
-    ![](./media/image6.png)
+5.  Select the resource group named **AzureMigrateRG**
 
 6.  Enter `SmartHotelMigration` as the migration project name, and
     choose a geography close to you to store the migration assessment
     data. Here we are selecting **United States**. Then
     select **Create**.
 
-    ![](./media/image7.png)
+    ![](./media/image7a.png)
 
     ![](./media/image8.png)
 

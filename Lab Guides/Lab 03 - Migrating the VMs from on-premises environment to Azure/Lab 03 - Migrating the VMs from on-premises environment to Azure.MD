@@ -50,8 +50,7 @@ automatically generated](./media/image7.png)
     - Resource group: **AzureMigrateRG**
 
     - Storage account
-      name: `migstrgXXXXXX` [substitute **XXXXXX** with random
-      number]
+      name: `migstrg@lab.LabInstance.Id`
 
     - Location: **West US**.
 
@@ -212,18 +211,11 @@ that will be used by the **Replication Storage Account**. You will also
 configure a private endpoint in this network to allow private, secure
 access to the **Replication Storage Account**.
 
-1.  Navigate to the **AzureMigrateRG** resource group and click on the
-    listed Replication Storage Account **migstrgXXXXXX** as shown in the
-    below image.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image23.jpeg)
-
-2.  Under **Security**, select **Networking -\> Private endpoint
+1.  Under **Security**, select **Networking -\> Private endpoint
     connections**, then select **+ Private endpoint**.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image24.jpeg)
+generated](./media/image24a.png)
 
 3.  On the **Basics** tab, enter the following configuration then
     select **Next: Resource**:
