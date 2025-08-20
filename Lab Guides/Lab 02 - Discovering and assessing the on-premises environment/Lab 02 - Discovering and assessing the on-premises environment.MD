@@ -988,8 +988,7 @@ generated](./media/image113.png)
 
 4.  Then make the below changes and click on the **Save** button.
 
-    - Target location – **West US** (Region in which the Subscription
-      vCPU cores were increased)
+    - Target location – **West US** 
 
     - Saving options – **3 Years reserved**
 
