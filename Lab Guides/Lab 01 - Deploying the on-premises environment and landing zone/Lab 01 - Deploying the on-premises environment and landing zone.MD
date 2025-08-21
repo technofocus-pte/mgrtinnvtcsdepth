@@ -136,7 +136,7 @@ with the next task.
     ![Graphical user interface, application, email Description automatically
 generated](./media/image7.png)
 
-2.  Select **Resource Groups** service.
+2.  Select **Resource Groups**.
 
     ![Graphical user interface, application Description automatically
 generated](./media/image8.png)
