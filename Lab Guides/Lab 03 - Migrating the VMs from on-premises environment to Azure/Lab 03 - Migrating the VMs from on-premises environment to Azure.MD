@@ -381,9 +381,9 @@ generated](./media/image55.jpeg)
     ![A screenshot of a computer Description automatically
 generated](./media/image56.jpeg)
 
-6.  On the **Compute** tab, select the **Standard_F2s_v2** VM size for
+6.  On the **Compute** tab, set the VM Security Type to **Standard**, select the **Standard_F2s_v2** VM size for
     each virtual machine. Select the **Windows operating system** for
-    the **smarthotelweb** virtual machines and the **Linux** operating
+    the **smarthotelwebX** virtual machines and the **Linux** operating
     system for the **UbuntuWAF** virtual machine. Select **Next**.
 
     ![A screenshot of a computer Description automatically
@@ -404,13 +404,13 @@ generated](./media/image58.jpeg)
     ![A screenshot of a computer Description automatically
 generated](./media/image59.jpeg)
 
-10. Confirm that the 3 machines are replicating.
+10. Expand **Migration**, select **Replications** and confirm that the 3 machines are replicating.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image60.png)
+generated](./media/image60a.png)
 
-11. Select **Replication** under **Manage** on the left.
-    Select **Refresh** occasionally and wait until all three machines
+
+11. Click on the **Refresh** button, occasionally and wait until all three machines
     have a **Protected** status, which shows the initial replication is
     complete. This will take several minutes.
 
