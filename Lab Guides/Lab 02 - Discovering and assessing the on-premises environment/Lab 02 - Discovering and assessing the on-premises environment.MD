@@ -1127,22 +1127,18 @@ generated](./media/image125.jpeg)
     select **Overview**.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image126.jpeg)
+generated](./media/image126a.png)
 
-22. Under **Manage**, select **Appliances**. Select **Refresh
-    services**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image127.jpeg)
+22. Under **Manage**, select **Appliances**. and the click on **SHAppl@lab.LabInstance.Id**.
 
     ![A screenshot of a computer Description automatically
-generated](./media/image128.jpeg)
+generated](./media/image127a.png)
 
-23. Wait for the refresh operation to complete. You should now see
+
+23. Click on the **Refresh services** button, then Wait for the refresh operation to complete. You should now see
     up-to-date information.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image129.png)
+    ![](./media/image129a.png)
 
 You have completed this task. Do not close this tab to proceed ahead
 with the next task.
