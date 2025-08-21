@@ -31,16 +31,13 @@ management.
     tenant credentials. In the Azure portal's left navigation,
     select **+ Create** a resource.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image5.png)
+    ![](./media/image5.png)
 
 2.  Search for and select `Storage account`, followed by **Create**.
 
-    ![Graphical user interface, application Description automatically
-generated](./media/image6.png)
+    ![](./media/image6.png)
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image7.png)
+    ![](./media/image7.png)
 
 3.  In the **Create storage account** blade, on the **Basics** tab, use
     the following values:
@@ -60,22 +57,18 @@ automatically generated](./media/image7.png)
 
     - Redundancy: **Locally-redundant storage (LRS)**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image8.jpeg)
+    ![](./media/image8.jpeg)
 
 
 4.  Select the **Data protection** tab and [**uncheck**] the **Enable soft
     delete blobs** and then select **Review** button, then
     select **Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image9.jpeg)
+    ![](./media/image9.jpeg)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image10.jpeg)
+    ![](./media/image10.jpeg)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image11.jpeg)
+    ![](./media/image11.jpeg)
 
 5. Click on Go to resource and then under **Data management** select **Data protection** ensure that **Enable soft delete for blobs** is unchecked, then click on **Save** button.
 
@@ -102,8 +95,7 @@ access to the **Replication Storage Account**.
 1.  Under **Security + networking**, select **Networking -\> Private endpoint
     connections**, then select **+ Private endpoint**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image24a.png)
+    ![](./media/image24a.png)
 
 3.  On the **Basics** tab, enter the following configuration then
     select **Next: Resource**:
@@ -114,16 +106,14 @@ generated](./media/image24a.png)
 
     - Region: **West US**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image25.jpeg)
+    ![](./media/image25.jpeg)
 
 4.  On the **Resource** tab, enter the following configuration then
     select **Next: Virtual Network**:
 
     - Target sub-resource: **blob**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image26.jpeg)
+    ![](./media/image26.jpeg)
 
 5.  On the **Virtual Network** tab, enter the following configuration
     then select **Next: DNS**:
@@ -135,8 +125,7 @@ generated](./media/image26.jpeg)
     - Private IP configuration: Select **Dynamically allocate IP
       address**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image27.jpeg)
+    ![](./media/image27.jpeg)
 
 6.  On the **DNS** tab, enter the following configuration then
     select **Next: Tags**.
@@ -147,23 +136,19 @@ generated](./media/image27.jpeg)
 
     - Resource group: **SmartHotelHostRG**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image28.jpeg)
+    ![](./media/image28.jpeg)
 
 7.  Select **Review + create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image29.jpeg)
+    ![](./media/image29.jpeg)
 
 8.  Select **Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image30.jpeg)
+    ![](./media/image30.jpeg)
 
 9.  **Wait** for the deployment to complete.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image31.jpeg)
+    ![](./media/image31.jpeg)
 
 **Task summary**
 
@@ -181,8 +166,7 @@ Provider** on your **Hyper-V host**.
 1.  Return to the **Azure Migrate** blade in the **Azure Portal**
     `https://portal.azure.com`.
 
-    ![Graphical user interface, application Description automatically
-generated](./media/image32.png)
+    ![](./media/image32.png)
 
 2.  Select **Servers,databases and webapps** under **Migration
     goals** on the left. Under **Migration tools**, select **Discover**.
@@ -203,8 +187,7 @@ generated](./media/image32.png)
     deployment of the Azure Site Recovery resource used by Azure
     Migrate: Server Migration for **Hyper-V migrations**. I
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image34.jpeg)
+    ![](./media/image34.jpeg)
 
 4.  Once deployment is complete, the **'Discover machines'** panel
     should be updated with additional instructions.
@@ -215,8 +198,7 @@ generated](./media/image35.jpeg)
 5.  Copy the **Download** link for the **Hyper-V replication** provider
     software installer to your clipboard.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image36.jpeg)
+    ![](./media/image36.jpeg)
 
 6.  Open the **SmartHotelHost** remote desktop window,
     launch **Chrome** from the desktop shortcut, and paste the link into
@@ -230,27 +212,23 @@ generated](./media/image37.png)
     the SmartHotelHost remote desktop session). Select the
     blue **Download** button and download the registration key file.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image38.png)
+    ![](./media/image38.png)
 
 8.  Open the file location in Windows Explorer, and copy the file to
     your clipboard. Return to the **SmartHotelHost** remote desktop
     session and paste the file to the desktop.
 
-    ![Graphical user interface, application Description automatically
-generated](./media/image39.png)
+    ![](./media/image39.png)
 
 9.  Still within the **SmartHotelHost** remote desktop session, open
     the **AzureSiteRecoveryProvider.exe** installer you downloaded a
     moment ago.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image40.png)
+    ![](./media/image40.png)
 
 10. On the **Microsoft Update** tab, select **Off** and select **Next**.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image41.png)
+    ![](./media/image41.png)
 
 11. Accept the default installation location and click **Install**.
 
@@ -259,21 +237,18 @@ generated](./media/image42.png)
 
 12. Select **Register** .
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image43.png)
+    ![](./media/image43.png)
 
 13. Browse to the location of the key file you downloaded. When the key
     is loaded select **Next**.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image44.png)
+    ![](./media/image44.png)
 
 14. Select **Connect directly to Azure Site Recovery without a proxy
     server** and select **Next**. The **registration** of the **Hyper-V
     host** with **Azure Site Recovery** will begin.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image45.png)
+    ![](./media/image45.png)
 
 15. Wait for registration to complete (this may take several minutes).
     Then select **Finish**.
@@ -286,22 +261,19 @@ generated](./media/image46.png)
     re-open the **Discover machines** panel by
     selecting **Discover** under **Migration tools**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image47.png)
+    ![](./media/image47.png)
 
 17. Select **Yes, with Hyper-V** for **Are your machines virtualized?**.
     Click on the **Finalize registration** button, which should now be
     enabled.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image48.jpeg)
+    ![](./media/image48.jpeg)
 
 18. Azure Migrate will now complete the registration with the Hyper-V
     host. **Wait** for the registration to complete. This may take
     several minutes.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image49.jpeg)
+    ![](./media/image49.jpeg)
 
 19. Once the registration is complete, close the **Discover
     machines** panel.
@@ -312,8 +284,7 @@ generated](./media/image50.jpeg)
 20. The **Migration and modernization** panel should now show **5
     discovered servers**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image51.jpeg)
+    ![](./media/image51.jpeg)
 
 **Task summary**
 
@@ -329,8 +300,7 @@ Migration service.
 1.  Under **Migration and modernization**, select **Replicate**. This
     opens the **Replicate** wizard
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image52.png)
+    ![](./media/image52.png)
 
 2.  In the **Specify intent** tab enter the following configuration then
     select **Continue.**
@@ -352,16 +322,14 @@ generated](./media/image52.png)
     Azure Migrate assessment.** Select the **SmartHotel VMs** VM group
     and the **SmartHotelAssessment** migration assessment.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image54.jpeg)
+    ![](./media/image54.jpeg)
 
 4.  The **Virtual machines** tab should now show the virtual machines
     included in the assessment. Select
     the **UbuntuWAF**, **smarthotelweb1**,
     and **smarthotelweb2** virtual machines, then select Next.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image55.jpeg)
+    ![](./media/image55.jpeg)
 
 5.  On the **Target settings** tab, select your subscription and the
     existing 
@@ -378,22 +346,19 @@ generated](./media/image55.jpeg)
     
     Select **Next**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image56.jpeg)
+    ![](./media/image56.jpeg)
 
 6.  On the **Compute** tab, set the VM Security Type to **Standard**, select the **Standard_F2s_v2** VM size for
     each virtual machine. Select the **Windows operating system** for
     the **smarthotelwebX** virtual machines and the **Linux** operating
     system for the **UbuntuWAF** virtual machine. Select **Next**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image57.jpeg)
+    ![](./media/image57.jpeg)
 
 7.  On the **Disks** tab, review the settings but do not make any
     changes. Select **Next**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image58.jpeg)
+    ![](./media/image58.jpeg)
 
 8.  On the **Tags** tab click on **Next**, then on the on the **Review +
     Start** replication tab, click on the **Replicate** button.
@@ -401,27 +366,23 @@ generated](./media/image58.jpeg)
 9.  In the **Migration tools** blade, under **Migration and
     modernization**, select the **Overview** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image59.jpeg)
+    ![](./media/image59.jpeg)
 
 10. Expand **Migration**, select **Replications** and confirm that the 3 machines are replicating.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image60a.png)
+    ![](./media/image60a.png)
 
 
 11. Click on the **Refresh** button, occasionally and wait until all three machines
     have a **Protected** status, which shows the initial replication is
     complete. This will take several minutes.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image61.jpeg)
+    ![](./media/image61.jpeg)
 
 > **Note:** The replication of the Virtual machines, will take around
 20-40 minutes to complete, please wait for the same.
 
-![A screenshot of a computer Description automatically
-generated](./media/image62.jpeg)
+![](./media/image62.jpeg)
 
 You have completed the task. Do not close the window and proceed to the
 next task.
@@ -442,96 +403,51 @@ for that machine.
     This opens a detailed migration and replication blade for this
     machine. Take a moment to study this information.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image62.jpeg)
+    ![](./media/image62.jpeg)
 
-2.  Select **Compute and Network** under **General** on the left, then
-    select **Edit**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image63.jpeg)
+2.  Select **Compute and Network** under **General** on the left.
 
 3.  Confirm that the VM is configured to use the **F2s_v2** VM size
-    (or **DS2_v2 or D2s_v3**).
 
-    ![](./media/image64.png)
+    ![](./media/image64b.png)
+    
+4.  Under **Network Interfaces**, click on the pencil icon to edit.
 
-4.  Under **Network Interfaces**, select **InternalNATSwitch** to open
-    the **network interface settings**.
+    ![](./media/image64a.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image65.jpeg)
+5.  Change the settings as below
 
-5.  Change the **Private IP address** to `192.168.0.4`.
-    Select **OK** to close the network interface settings blade.
+    - IP address type - **Static**
 
-    ![Graphical user interface, text, application Description automatically
-generated](./media/image66.png)
+    - **Private IP address** - `192.168.0.4`
+
+    - Click on **Apply** button.
+    
+    ![](./media/image66a.png)
 
 6.  **Save** the **smarthotelweb1** settings.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image67.jpeg)
+    ![](./media/image67a.png)
 
     ![](./media/image68.png)
 
-> **Note** - Repeat these steps to configure the private IP address for
-the other
+7. Repeat these steps to configure the private IP address for
+the **smarthotelweb2** 
 
-7.  Still using the **Azure Migrate: Migration and modernization |
-    Replication** blade, select the **smarthotelweb2** virtual machine.
+    - verify VM size to be **F2s_v2** 
+    
+    - IP address type - **Static**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image69.jpeg)
+    - **Private IP address** - `192.168.0.5`
 
-8.  Select **Compute and Network** under **General** on the left, then
-    select **Edit**.
+7. Repeat these steps to configure the private IP address for
+the **UbuntuWAF** 
 
-    ![](./media/image70.png)
+    - verify VM size to be **F2s_v2** 
+    
+    - IP address type - **Static**
 
-9.  Under **Network Interfaces**, select **InternalNATSwitch** to open
-    the network interface settings.
-
-    ![](./media/image71.png)
-
-10. Change the **Private IP address** to `192.168.0.5`.
-    Select **OK** to close the network interface settings blade.
-
-    ![](./media/image72.png)
-
-11. **Save** the **smarthotelweb2** settings.
-
-    ![](./media/image73.png)
-
-12. Using the **Azure Migrate: Migration and modernization | Replicating
-    machines** blade, select the **UbuntuWAF** virtual machine. This
-    opens a detailed migration and replication blade for this machine
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image74.jpeg)
-
-13. Select **Compute and Network** under **General** on the left, then
-    select **Edit**
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image75.png)
-
-14. Confirm that the VM is configured to use the **F2s_v2** VM size
-    .Under **Network Interfaces**, select **InternalNATSwitch** to open
-    the network interface settings.
-
-    ![](./media/image76.png)
-
-15. Change the **Private IP address** to `192.168.0.8`.
-    Select **OK** to close the network interface settings blade.
-
-    ![Graphical user interface, application Description automatically
-generated](./media/image77.png)
-
-16. **Save** the **UbuntuWAF** settings.
-
-    ![Graphical user interface, application Description automatically
-generated](./media/image78.png)
+    - **Private IP address** - `192.168.0.8`
 
 You have completed the task. Do not close the window and proceed to the
 next task.
@@ -566,29 +482,27 @@ final migration.
 
 2.  Click on **Overview** under **Migration tools** section.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image80.png)
+    ![](./media/image80.png)
 
-3.  Under **Step 3: Migrate**, select **Migrate**.
+3.  From the Overview screen click on the **Migrate** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image81.jpeg)
+    ![](./media/image81a.png)
 
 4.  On the **Specify Intent** page, ensure **Azure VM** is chosen, then
     click on Continue
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image82.jpeg)
+    ![](./media/image82.jpeg)
 
     > **Note**: You can optionally choose whether the on-premises virtual
     machines should be automatically shut down before migration to minimize
     data loss. Either setting will work for this lab.
 
 5.  On the **Migrate** blade, select the 3 virtual machines then
-    select **Migrate** to start the migration process.
+    click on the **Migrate** button to start the migration process.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image83.jpeg)
+    ![](./media/image83a.png)
+
+    > **Note** - Ignore the Test migration status as Failed, as we are not doing it for this test environment 
 
 6.  The migration process will start.
 
@@ -597,25 +511,21 @@ generated](./media/image83.jpeg)
 7.  To monitor progress, select **Jobs** under **Manage** on the left
     and review the status of the three **Planned failover** jobs.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image85.jpeg)
+    ![](./media/image85a.png)
 
 8.  **Wait** until all three **Planned failover** jobs show
     a **Status** of **Successful**. You should not need to refresh your
     browser. This could take up to **15 minutes**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image86.jpeg)
+    ![](./media/image86a.png)
 
 9.  Navigate to the **SmartHotelRG** resource group and check that the
     VM, network interface, and disk resources have been created for each
     of the virtual machines being migrated.
 
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image87.png)
+    ![](./media/image87a.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image88.png)
+    ![](./media/image88a.png)
 
 **Task summary**
 
@@ -634,14 +544,4 @@ Migrated the 3 VMs to the SmartHotelRG resource group.
 
 - **UbuntuWAF**
 
-We also need to Stop the Migrated VMs and the SmartHotelHost VM to
-conserve the credit to ensure that the remaining labs can be completed.
-
-![Graphical user interface, text, application, email Description
-automatically generated](./media/image89.png)
-
-![Graphical user interface, text, application, email Description
-automatically generated](./media/image90.png)
-
-We also need to Stop the Migrated VMs and the SmartHotelHost VM to
-conserve the credit to ensure that the remaining labs can be completed.
+![](./media/image90a.png)
