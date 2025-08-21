@@ -183,7 +183,8 @@ generated](./media/image20.jpeg)
     the option **Shown in folder.**
 
     ![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+generated](./media/image25a.png)
+
 
 15. Double-click on the zip file - **AzureMigrateAppliance**
 
@@ -411,6 +412,15 @@ generated](./media/image57.png)
 
     ![A screenshot of a computer Description automatically
 generated](./media/image58.png)
+
+    <font color=red>
+
+    > **Note** - if you receive the below notification, it can be ignored.
+
+    </font>
+
+    ![](./media/image58a.png)
+
 
 19. In Manage credentials and discovery sources **Step 1: Provide
     Hyper-V host credentials**, select **Add credentials**.
