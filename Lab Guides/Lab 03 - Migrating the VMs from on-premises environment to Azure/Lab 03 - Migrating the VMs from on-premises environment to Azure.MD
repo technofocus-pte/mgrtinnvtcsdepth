@@ -52,7 +52,9 @@ automatically generated](./media/image7.png)
     - Storage account
       name: `migstrg@lab.LabInstance.Id`
 
-    - Location: **West US**.
+    - Region: **West US**.
+
+    - Primary service: **Azure Blob Storage or Azure Data Lake Storage Gen 2**
 
     - Performance: **Standard**
 
@@ -90,128 +92,14 @@ with the next task.
 In this task you created a new Azure Storage Account that will be used
 by Azure Migrate: Server Migration.
 
-### Task 2: Create a Private Endpoint
-
-In this task you will create an endpoint on the provided virtual network
-that will be used by the SQL Server resource.
-
-You will also configure a private endpoint in this network to allow
-private, secure access to the SQL Database.
-
-> **Note:** Azure provides several options for deploying the right network
-configuration. After the lab, if you’d like to better understand your
-networking options, see the [network decision
-guide]`https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/software-defined-network`,
-which builds on the Cloud Adoption Framework’s Azure landing zones.
-
-1.  Navigate to the **SmartHotelRG** resource group, and click on the
-    listed **SQL server** as shown in the below image.
-
-    ![Graphical user interface, text, application, email Description
-automatically generated](./media/image12.png)
-
-    ![Graphical user interface, text, application Description automatically
-generated](./media/image13.png)
-
-2.  Under **Security**, select **Networking** **-\>Private access**,
-    then select **+ Create a Private endpoint**.
-
-    ![](./media/image14.png)
-
-3.  On the **Basics** tab, enter the following configuration then
-    select **Next: Resource**:
-
-    - Resource group: **SmartHotelRG**
-
-    - Name: `SmartHotel-DB-Endpoint`
-
-    - Region: **West US** (Select the same location as the
-      SmartHotelVNet.)
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image15.jpeg)
-
-4.  On the **Resource** tab, enter the following configuration then
-    select **Next: Virtual Network**:
-
-    - Target sub-resource: **sqlServer**
-
-    ![](./media/image16.png)
-
-5.  On the **Virtual Network** tab, enter the following configuration
-    then select **Next: DNS**:
-
-    - Virtual network: **SmartHotelVNet**
-
-    - Subnet: **SmartHotelDB (192.168.0.128/25)**
-
-    - Private IP configuration: Select **Dynamically allocate IP
-      address**
-
-    ![](./media/image17.png)
-
-6.  On the **DNS** tab, enter the following configuration then
-    select **Next: Tags.**
-
-    - Integrate with private DNS zone: **Yes**
-
-    - Subscription: **Keep the default selected subscription**
-
-    - Resource group: **SmartHotelRG**
-
-    ![](./media/image18.png)
-
-7.  Select **Review + create**.
-
-    ![](./media/image19.png)
-
-8.  Select **Create**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image20.jpeg)
-
-9.  **Wait** for the deployment to complete.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image21.jpeg)
-
-10. Open the **Private Endpoint** blade, click on **DNS
-    configuration** and note that the **FQDN** for the endpoint is
-    listed as **\\database.windows.net**, with an internal IP
-    address **192.168.0.132**.
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image22.jpeg)
-
-> **Note**: Private DNS is used so that the database domain
-name, **\\database.windows.net** resolves to the internal private
-endpoint IP address **192.168.0.132** when resolved from the
-SmartHotelVNet, but resolves to the Internet-facing IP address of the
-database server when resolved from outside the VNet. This means the same
-connection string (which contains the domain name) can be used in both
-cases.
-
-> **Note**: If the private endpoint connection fails to allow the IP
-address or database domain name to connect to the database, it may be
-required to create a new firewall rule to allow the IP address ranges of
-the database and the private link.
-
-You have completed this task. Do not close this tab to proceed ahead
-with the next task.
-
-**Task summary**
-
-In this task you created a private endpoint on the virtual network that
-will be used to access the SQL database.
-
-### Task 3: Create a Private Endpoint for storage account
+### Task 2: Create a Private Endpoint for storage account
 
 In this task you will create an endpoint on the provided virtual network
 that will be used by the **Replication Storage Account**. You will also
 configure a private endpoint in this network to allow private, secure
 access to the **Replication Storage Account**.
 
-1.  Under **Security**, select **Networking -\> Private endpoint
+1.  Under **Security + networking**, select **Networking -\> Private endpoint
     connections**, then select **+ Private endpoint**.
 
     ![A screenshot of a computer Description automatically
@@ -282,7 +170,7 @@ generated](./media/image31.jpeg)
 In this task you created a private endpoint on the virtual network that
 will be used to access the **Replication Storage Account**.
 
-### Task 4: Register the Hyper-V Host with Migration and modernization
+### Task 3: Register the Hyper-V Host with Migration and modernization
 
 In this task, you will register your Hyper-V host with the **Azure
 Migrate: Server Migration** service. This service uses **Azure Site
@@ -432,7 +320,7 @@ generated](./media/image51.jpeg)
 In this task you registered your Hyper-V host with the Azure Migrate
 Server Migration service.
 
-### Task 5: Enable Replication from Hyper-V to Azure Migrate
+### Task 4: Enable Replication from Hyper-V to Azure Migrate
 
 In this task, you will configure and enable the replication of your
 on-premises virtual machines from Hyper-V to the Azure Migrate Server
@@ -453,8 +341,11 @@ generated](./media/image52.png)
 
     - Are your machine virtualized? – **Yes, with Hyper-V**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image53.jpeg)
+    ![](./media/image53.jpeg)
+
+    > **Note** - if you receive the below error, then close the browser and try again.
+
+    ![](./media/image53a.png)
 
 3.  On the **Virtual machines** tab, under **Import migration settings
     from an assessment**, select **Yes, apply migration settings from an
@@ -473,10 +364,19 @@ generated](./media/image54.jpeg)
 generated](./media/image55.jpeg)
 
 5.  On the **Target settings** tab, select your subscription and the
-    existing **SmartHotelRG** resource group. Under **Cache storage
-    account** select the **migstrgXXXXXX** storage account and
-    under **Virtual Network** select **SmartHotelVNet**. Under Subnet
-    select **SmartHotel**. Select **Next**.
+    existing 
+    
+    - Resource group: **SmartHotelRG**
+    
+    - Cache storage account: **migstrg@lab.LabInstance.Id** 
+    
+    -  Virtual Network: **SmartHotelVNet**. 
+    
+    - Subnet: **SmartHotel**. 
+    
+    - Availability options: **No infrastructure redundancy required**
+    
+    Select **Next**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image56.jpeg)
@@ -531,7 +431,7 @@ next task.
 In this task you enabled replication from the Hyper-V host to Azure
 Migrate, and configured the replicated VM size in Azure.
 
-### Task 6: Configure static internal IP addresses for each VM
+### Task 5: Configure static internal IP addresses for each VM
 
 In this task you will modify the settings for each replicated VM to use
 a static private IP address that matches the on-premises IP addresses
@@ -649,7 +549,7 @@ Azure retain the same IPs they had on-premises, which avoids having to
 reconfigure the VMs during migration (for example, by editing web.config
 files).
 
-### Task 7: Server migration
+### Task 6: Server migration
 
 In this task you will perform a migration of the UbuntuWAF,
 smarthotelweb1, and smarthotelweb2 machines to Azure.
