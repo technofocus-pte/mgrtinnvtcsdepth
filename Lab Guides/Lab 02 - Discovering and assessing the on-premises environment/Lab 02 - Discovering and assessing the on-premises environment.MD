@@ -112,7 +112,7 @@ generated](./media/image10.jpeg)
 generated](./media/image11.png)
 
 3.  In **1: Generate project key**,
-    provide `SHApplXXXXXX` as name for the Azure Migrate appliance that you will set up
+    provide `SHAppl@lab.LabInstance.Id` as name for the Azure Migrate appliance that you will set up
     for discovery of Hyper-V VMs. Select **Generate key** to start the
     creation of the required Azure resources.
 
