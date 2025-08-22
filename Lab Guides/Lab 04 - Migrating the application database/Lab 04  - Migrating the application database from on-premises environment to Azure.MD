@@ -12,9 +12,6 @@ objects from multiple sources to the cloud at scale.
 ![A diagram of a cloud server Description automatically generated with
 medium confidence](./media/image1.jpeg)
 
-> **Note**: Start your virtual machines if you have stopped them after
-your previous lab.
-
 ## Exercise 1 - Migrating Microsoft SQL database to Azure SQL Database
 
 ### Task 1: Register the Microsoft.DataMigration resource provider
