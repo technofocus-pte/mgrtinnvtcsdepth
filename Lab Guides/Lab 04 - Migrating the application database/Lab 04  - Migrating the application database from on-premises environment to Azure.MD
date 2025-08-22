@@ -24,9 +24,12 @@ provider **Microsoft.DataMigration** must be registered in the target
 subscription.
 
 1.  Open the Azure Cloud Shell by navigating
-    to `https://shell.azure.com`. Log in using your Azure
-    subscription credentials if prompted to do so, select
-    a **PowerShell** session, and accept any prompts.
+    to `https://shell.azure.com`. 
+    
+    
+2. Log in using the Credentials provided on the Home/Resources tab of the Lab interface, if prompted to do so, 
+
+2. Select **PowerShell** session, and accept any prompts.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image2.jpeg)
