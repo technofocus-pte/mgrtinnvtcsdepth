@@ -261,8 +261,12 @@ below details on the **Source details** tab.
 
     ![](./media/imagea11.png)
 
-    > **Note** - ignore if you are getting the below notification and proceed with next step.
+    <font color=darkgreen>
+
+    > **Note** - if you are getting the below notification, you can ignore it and proceed to the next step.
     
+    </font>
+
     ![](./media/image25a.png)
 
 4.  On the Azure SQL Database Offline Migration Wizard page, provide the
