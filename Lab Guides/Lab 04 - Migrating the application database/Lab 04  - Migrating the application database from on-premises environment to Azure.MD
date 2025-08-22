@@ -31,8 +31,7 @@ subscription.
 
 2. Select **PowerShell** session, and accept any prompts.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image2.jpeg)
+    ![](./media/image2.jpeg)
 
 2.  On the **Get started** window select **Mount storage account** and then select the appropriate subscription and thek click on the **Apply** button.
 
@@ -49,20 +48,30 @@ generated](./media/image2.jpeg)
 
     `Register-AzResourceProvider -ProviderNamespace Microsoft.DataMigration`
 
+    <font color=darkred>
+
+    > **Note** - if the paste is showing as **^V** then copy and paste the command manually.
+
+    </font> 
+
     > **Note**: It may take several minutes for the resource provider to
     register. You can proceed to the next task without waiting for the
     registration to complete. You will not use the resource provider until
     task 3.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image4.jpeg)
+    ![](./media/image4.jpeg)
 
 4.  You can check the status by running:
 
     `Get-AzResourceProvider -ProviderNamespace Microsoft.DataMigration | Select-Object ProviderNamespace, RegistrationState, ResourceTypes`
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image5.jpeg)
+    ![](./media/image5.jpeg)
+
+    <font color=darkred>
+
+    > **Note** - if the paste is showing as **^V** then copy and paste the command manually.
+
+    </font> 
 
 You have completed this task. Do not close any windows and please
 proceed ahead with the next task.
@@ -98,43 +107,38 @@ simulate the on-premises connection, these two VNet have been peered.
 
 1.  Select **Connect**, choose **Connect** from the drop-down.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image18a.jpeg)
+    ![](./media/image18a.jpeg)
 
 2.  Select **Download RDP File**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image19a.jpeg)
+    ![](./media/image19a.jpeg)
 
 3. Click on the **Keep** button for the notification and then click
     on **Open file** to connect.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image20a.jpeg)
+    ![](./media/image20a.jpeg)
 
 3. **Connect** to the virtual machine using username `demouser` and
     password `demo!pass123`
 
 1. Launch **Chrome** from the desktop shortcut.
 
-2.  Navigate to the Azure portal `https://portal.azure.com` search
-    for `Azure database migration`, and then select **Azure Database
+2. Navigate to the Azure portal `https://portal.azure.com` and login using the credentials from Home/Resources tab of the Lab interface. 
+
+2. Search for `Azure database migration`, and then select **Azure Database
     Migration Services** from the drop-down list.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image6.jpeg)
+    ![](./media/image6.jpeg)
 
 3.  On the **Azure Database Migration Services** blade, select
     + **Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image7.jpeg)
+    ![](./media/image7.jpeg)
 
 4.  Review the details on the **Select migration scenario and Database
     Migration Service** page and click on the **Select** button
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image8.jpeg)
+    ![](./media/image8.jpeg)
 
 5.  On the Create Data Migration Service page, Basics tab, provide the
     below details.
@@ -154,42 +158,35 @@ generated](./media/image9.png)
 
 6.  On the **Review + create** tab, click on the **Create** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image10.png)
+    ![](./media/image10.png)
 
 7.  The Deployment should be completed in few seconds, click on **Go to
     resource** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+    ![](./media/image11.png)
 
 8.  Select **Integration runtime** under Settings, then click
     on **Configure integration runtime.**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image12.jpeg)
+    ![](./media/image12.jpeg)
 
 9.  Click on the link **Download and install the integration
     runtime** and download the runtime on the **SmartHotelHost** VM
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image13.jpeg)
+    ![](./media/image13.jpeg)
 
 10. Click on the **Download**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image14.png)
+    ![](./media/image14.png)
 
 11. Choose the most recent version and the click on **Download**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image15.png)
+    ![](./media/image15a.png)
 
 12. Once downloaded, install the Integration runtime with the default
     options
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image16.jpeg)
+    ![](./media/image16.jpeg)
 
 13. The **Microsoft Integration runtime Configuration manager** should
     launch upon clicking the **Finish** button.
@@ -197,19 +194,16 @@ generated](./media/image16.jpeg)
 14. From the Azure Portal, **Configure integration runtime** tab copy
     the **Key 1** value
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image17.jpeg)
+    ![](./media/image17.jpeg)
 
 15. Back on the **Microsoft Integration runtime Configuration
     manager** paste the copied key and click on the **Register** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image18.jpeg)
+    ![](./media/image18.jpeg)
 
 16. Click on the **Finish** button
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image19.jpeg)
+    ![](./media/image19.jpeg)
 
     ![A yellow rectangle with black text Description automatically
 generated](./media/image20.jpeg)
@@ -217,14 +211,12 @@ generated](./media/image20.jpeg)
 17. Once the Registration is completed, click on **Launch Configuration
     Manager** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image21.jpeg)
+    ![](./media/image21.jpeg)
 
 18. Review the details on the **Microsoft Integration runtime
     Configuration manager**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image22.jpeg)
+    ![](./media/image22.jpeg)
 
 19. Switch back to the Azure portal and click Ok on the **Configure
     integration runtime** tab.
@@ -232,8 +224,7 @@ generated](./media/image22.jpeg)
 20. The Status should be updated to Online for the **Integration
     runtime**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image23.jpeg)
+    ![](./media/image23.jpeg)
 
 ### Task 3: Migrate the On-premises SQL Database to Azure SQL Database
 
@@ -241,8 +232,7 @@ generated](./media/image23.jpeg)
     Overview and then click on **New Migration** button under Getting
     started tab.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image24.jpeg)
+    ![](./media/image24.jpeg)
 
 2.  On the Select new migration scenario page, provide the below details
 
@@ -250,8 +240,7 @@ generated](./media/image24.jpeg)
 
     - Target server type -- **Azure SQL Database**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image25.jpeg)
+    ![](./media/image25.jpeg)
 
 3.  Click on the **Select** button
 
@@ -264,8 +253,6 @@ below details on the **Source details** tab.
 
     - Subscription – keep the default selected.
 
-    - Authentication type: **SQL Authentication**
-
     - Resource group: **SmartHotelHostRG**
 
     - Location: **West US**
@@ -273,6 +260,10 @@ below details on the **Source details** tab.
     - SQL Server Instance Name: `192.168.0.6`
 
     ![](./media/imagea11.png)
+
+    > **Note** - ignore if you are getting the below notification and proceed with next step.
+    
+    ![](./media/image25a.png)
 
 4.  On the Azure SQL Database Offline Migration Wizard page, provide the
     below details on the **Connect to source SQL Server** tab.
@@ -287,8 +278,7 @@ below details on the **Source details** tab.
 
     - Connection properties -- **enable both check boxes**
 
-    ![A screenshot of a login Description automatically
-generated](./media/image26.jpeg)
+    ![](./media/image26.jpeg)
 
 5.  Click on **Next: Select database for migration \>\>**
 
@@ -296,63 +286,53 @@ generated](./media/image26.jpeg)
     SmartHotel.Registration database and click on **Next: Connect to the
     target Azure SQL Database \>\>**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image27.jpeg)
+    ![](./media/image27.jpeg)
 
 7.  On the **Connect to the target Azure SQL Database** tab all the
     information should already be populated, you can review the
     information, then provide the password -- `demo!pass123` and
     click on **Next: Map source and target databases \>\>**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image28.jpeg)
+    ![](./media/image28.jpeg)
 
 8.  On the **Map source and target databases** tab, from the drop-down
     of Target database select **smarthoteldb** and then click on **Next:
     Select database tables to migrate \>\>**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image29.jpeg)
+    ![](./media/image29.jpeg)
 
 9.  On the **Select database tables to migrate** tab, click on the
     drop-down **SmartHotel.Registration tables selected 2/2** and ensure
     that the \[dbo\].\[Bookings\] is only the table which is selected
     and then click on **Next: Database migration summary \>\>**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image30.jpeg)
+    ![](./media/image30.jpeg)
 
 10. On the **Database migration summary** tab, review the details and
     then click on **Start migration** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image31.jpeg)
+    ![](./media/image31.jpeg)
 
 11. The Migration status can be seen under the **Migration** tab
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image32.jpeg)
+    ![](./media/image32.jpeg)
 
     > **Note: The Migration will take around 10 minutes**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image33.jpeg)
+    ![](./media/image33.jpeg)
 
 12. Click on the **Refresh** button couple of times, till the Migration
     status changed to **Succeeded**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image34.jpeg)
+    ![](./media/image34.jpeg)
 
 13. Click on the Source name, **192.168.0.6**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image35.jpeg)
+    ![](./media/image35.jpeg)
 
 14. Review the details of the Migration
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image36.jpeg)
+    ![](./media/image36a.png)
 
 15. We have successfully migrated the On-premises SQL Database to Azure
     SQL Database.
@@ -365,5 +345,4 @@ the **SmartHotelHost** VM to be able migrate the on-premises database
 successfully to Azure SQL Database using the Database Migration Service
 (**DMS**).
 
-![A screenshot of a computer Description automatically
-generated](./media/image36.jpeg)
+![](./media/image36a.png)
