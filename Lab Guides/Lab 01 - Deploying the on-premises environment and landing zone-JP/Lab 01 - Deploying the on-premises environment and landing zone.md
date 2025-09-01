@@ -16,9 +16,7 @@
 
 - Azure SQL データベース など。
 
-&nbsp;
-
-    ![](./media/image1.jpg)
+![](./media/image1.jpg)
 
 **SmartHotelHostRG**,
 では、4つのネストされたVMを持つネストされたHyper-Vを実行しているＶＭが作成されます。これは、このラボで評価して、移行する「on-premises」環境を表しています。

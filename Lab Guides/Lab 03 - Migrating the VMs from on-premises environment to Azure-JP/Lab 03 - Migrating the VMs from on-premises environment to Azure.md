@@ -81,134 +81,14 @@ Account**を作成します。
 このタスクでは、Azure Migrate: Server Migration で使用される新しい Azure
 ストレージ アカウントを作成しました。
 
-### タスク２：プライベートエンドポイントを作成する
-
-このタスクでは、SQL Server
-リソースによって使用される、指定された仮想ネットワーク上にエンドポイントを作成します。
-
-また、このネットワークにプライベート エンドポイントを構成して、SQL
-データベースへのプライベートで安全なアクセスを許可します。
-
-> **注意:** Azure
-> では、適切なネットワーク構成を導入するためのオプションが複数用意されています。ラボ終了後、ネットワーク構成のオプションについてさらに詳しく知りたい場合は、クラウド導入フレームワークの
-> Azure ランディングゾーンに基づいた\[network decision guide\]
-> `(https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/software-defined-network )` をご覧ください。`
-
-1.  **SmartHotelRG**リソース
-    グループに移動し、下の画像に示すようにリストされている**SQL
-    server**をクリックします。
-
-    ![](./media/image10.png)
-
-  
-
-    ![](./media/image11.png)
-
-2.  **Security**の下で**Networking -\>Private
-    access** を選択します。 そして **+ Create a Private
-    endpoint** を選択します。
-
-    ![](./media/image12.png)
-
-3.  **Basicsタブ**で次の構成を入力し、**Next: Resource**を選択します：
-
-    - リソース グループ: **SmartHotelRG**
-
-    - 名前: `SmartHotel-DB-Endpoint`
-
-    - リージョン: **West US** (SmartHotelVNet と同じ場所を選択します。)
-
-    ![](./media/image13.jpg)
-
-4.  **Resource**タブで次の構成を入力し、**Next: Virtual
-    Network**:を選択します。
-
-    - ターゲットサブリソース: **sqlServer**
-
-    ![](./media/image14.png)
-
-5.  **Virtual Network**タブで次の構成を入力し、**Next:
-    DNS**:を選択します：
-
-    - 仮想ネットワーク: **SmartHotelVNet**
-
-    - サブネット: **SmartHotelDB (192.168.0.128/25)**
-
-    - プライベートIP設定: **Dynamically allocate IP
-      address**を選択します。
-
-    ![](./media/image15.png)
-
-6.  **DNS**タブで次の構成を入力し、**Next: Tags**を選択します。
-
-    - プライベートDNSゾーンとの統合: **Yes**
-
-    - サブスクリプション: **Keep the default selected subscription**
-
-    - リソース グループ: **SmartHotelRG**
-
-    ![](./media/image16.png)
-
-7.  **Review + create**を選択します。
-
-    ![](./media/image17.png)
-
-8.  **Create**を選択します。
-
-    ![](./media/image18.jpg)
-
-  
-
-9.  デプロイメントが完了するまで **Wait** します。
-
-    ![](./media/image19.jpg)
-
-  
-
-10. **Private Endpoint**ブレードを開き、**DNS
-    configuration**をクリックすると、エンドポイントのFQDNが∖**database.windows.net**としてリストされ、内部
-    IP アドレスが**192.168.0.132**であることを確認します。
-
-    ![](./media/image20.jpg)
-
-  
-
-> **注意:**プライベートDNSを使用することで、データベースドメイン名∖**database.windows.net**は、**SmartHotelVNet**
-> から解決された場合は内部プライベートエンドポイント IP
-> アドレス**192.168.0.132**に解決されますが、VNet
-> 外部から解決された場合はデータベースサーバーのインターネット接続 IP
-> アドレスに解決されます。つまり、どちらの場合も同じ接続文字列（ドメイン名を含む）を使用できます。
->
-> **注意:** プライベート エンドポイント接続で、IP
-> アドレスまたはデータベース
-> ドメイン名がデータベースに接続できない場合は、データベースとプライベート
-> リンクの IP アドレス範囲を許可する新しいファイアウォール
-> ルールの作成が必要になることがあります。
-
-
-
-**タスクのまとめ**
-
-このタスクでは、SQL
-データベースへのアクセスに使用される仮想ネットワーク上にプライベート
-エンドポイントを作成しました。
-
-### タスク３：ストレージ アカウントのプライベート エンドポイントを作成する
+### タスク2：ストレージ アカウントのプライベート エンドポイントを作成する
 
 **Replication Storage
 Account**が使用するエンドポイントを作成します。また、このネットワークにプライベート
 エンドポイントを構成し、**Replication Storage
 Account**へのプライベートで安全なアクセスを許可します。
 
-1.  **AzureMigrateRG**リソース
-    グループに移動し、下の画像に示すように、リストされているレプリケーション
-    ストレージ アカウント**migstrg@lab.LabInstance.Id**をクリックします。
-
-    ![](./media/image21.jpg)
-
-  
-
-2.  **Security** の下で、**Networking -\> Private endpoint
+1.  **Security** の下で、**Networking -\> Private endpoint
     connections** を選択し、**+ Private endpoint**を選択します。
 
     ![](./media/image22.jpg)
@@ -285,7 +165,7 @@ Account**へのプライベートで安全なアクセスを許可します。
 Account**へのアクセスに使用される仮想ネットワーク上にプライベート
 エンドポイントを作成しました。
 
-### タスク４：移行と最新化を使用して Hyper-V ホストを登録する
+### タスク 3：移行と最新化を使用して Hyper-V ホストを登録する
 
 このタスクでは、Hyper-V ホストを**Azure Migrate: Server
 Migration**サービスに登録します。このサービスは、**Azure Site Recovery**
@@ -453,7 +333,7 @@ Migration**サービスに登録します。このサービスは、**Azure Site
 このタスクでは、Hyper-V ホストを Azure Migrate Server Migration
 サービスに登録しました。
 
-### タスク５：Hyper-V から Azure Migrate へのレプリケーションを有効にする
+### タスク 4：Hyper-V から Azure Migrate へのレプリケーションを有効にする
 
 このタスクでは、on-premisesの仮想マシンの Hyper-V から Azure Migrate
 Server Migration サービスへのレプリケーションを構成して有効にします。
@@ -557,7 +437,7 @@ generated](./media/image60.jpg)
 へのレプリケーションを有効にし、Azure でレプリケートされた
 VMサイズを構成しました。
 
-### タスク６：各VMに静的内部IPアドレスを構成する
+### タスク 5：各VMに静的内部IPアドレスを構成する
 
 このタスクでは、レプリケートされた各 VM
 の設定を変更して、そのマシンのon-premises IP
