@@ -80,7 +80,8 @@ generated](./media/image2.jpg)
     tab**に記載されている **Office 365 Tenant
     Credential**を使ってログインします。
 
-2.  ホームページで**Resource group**を選択します。 
+2.  検索バーに `resource groups` と入力し、 **resource
+    groups** を選択します。 
 
     ![](./media/image3.png)
 

@@ -36,20 +36,23 @@ Account**を作成します。
 
   
 
-3.  **Create storage
-    account**ブレードの**Basics**タブで、次の値を使用します：
+3.  **\[Create storage account \]** ブレードの \[**Basics** \]
+    タブで、**次**の値を使用します。
 
-    - サブスクリプション: **Keep the default selected subscription**.
+    - Subscription:**デフォルトで選択されたサブスクリプションをそのままにします**。
 
-    - リソース グループ: **AzureMigrateRG**
+    - Resource group: **AzureMigrateRG**
 
-    - ストレージ アカウント名: `migstrg@lab.LabInstance.Id`
+    - Storage account name: `migstrg@lab.LabInstance.Id`
 
-    - 場所: **West US.**
+    - Region: **West US**。
 
-    - パフォーマンス: **Standard**
+    - Primary service: **Azure Blob Storage or Azure Data Lake Storage
+      Gen 2**
 
-    - 冗長性: **Locally-redundant storage (LRS)**
+    - Performance: **Standard**
+
+    - Redundancy: **Locally-redundant storage (LRS)**
 
     ![](./media/image5.jpg)
 
@@ -88,12 +91,11 @@ Account**が使用するエンドポイントを作成します。また、こ�
 エンドポイントを構成し、**Replication Storage
 Account**へのプライベートで安全なアクセスを許可します。
 
-1.  **Security** の下で、**Networking -\> Private endpoint
-    connections** を選択し、**+ Private endpoint**を選択します。
+1.  \[Under **Security + networking\]** で、 **\[** **Networking -\>
+    Private endpoint  
+    connections\]を選択し**、 **\[+ Private endpoint\]を選択します**。
 
-    ![](./media/image22.jpg)
-
-  
+    ![](./media/image22a.png)   
 
 3.  **Basics**タブで次の構成を入力し、**Next: Resource**を選択します：
 
@@ -364,7 +366,10 @@ Server Migration サービスへのレプリケーションを構成して有効
 
     ![](./media/image52.jpg)
 
-  
+    > **注意**: 以下のエラーが表示された場合は、ブラウザを閉じてもう一度  
+    > 試してみてください。
+
+    ![](./media/image51a.png)
 
 4.  **Virtual
     machines**タブに、評価に含まれる仮想マシンが表示されます。**UbuntuWAF
@@ -375,11 +380,19 @@ Server Migration サービスへのレプリケーションを構成して有効
 
   
 
-5.  **Target
-    settings**タブで、サブスクリプションと既存の**SmartHotelRG**リソースグループを選択します。
-    **Cache storage
-    account**で**migstrg@lab.LabInstance.Id**ストレージアカウントを選択し、 **Virtual
-    Network**で**SmartHotelVNet**を選択します。サブネットで**SmartHotel**を選択します。**Next**を選択します。
+5.  **Target settings** タブで、サブスクリプションを選択してください。
+
+    1.  Resource group: **SmartHotelRG**
+
+    2.  Cache storage account: **migstrg@lab.LabInstance.Id** 
+
+    3.  Virtual Network: **SmartHotelVNet**.
+
+    4.  Subnet: **SmartHotel**.
+
+    5.  Availability options: **No infrastructure redundancy required**
+
+- **\[Next\]** を選択します。
 
     ![](./media/image54.jpg)
 
@@ -515,45 +528,62 @@ VMサイズを構成しました。
 
     ![](./media/image71.png)
 
-12. **Azure Migrate: Migration and modernization | Replicating
-    machinesブレード**を使用して、
-    **UbuntuWAF**仮想マシンを選択します。これにより、このマシンの詳細な移行とレプリケーション
-    ブレードが開きます。
+12.  引き続き「 **Azure Migrate: Migration and modernization |
+    Replication** **」** ブレードを  
+    使用し、
+    **smarthotelweb1**仮想マシンを選択します。そうすると、このマシンの詳細な移行とレプリケーション詳細のブレードが開きます。この情報をよくご確認ください。
 
-    ![](./media/image72.jpg)
+        ![](./media/image72a.jpg)
 
-  
+13.  左側の **General** の 下にある **Compute and
+    Network** を選択します。　
 
-13. 左側の**General**の下にある**Compute and
-    Network**を選択し、**Edit**を選択します。
+14.  VMが **F2s_v2**
+    VMサイズを使用するように構成されていることを確認します。
 
-    ![](./media/image73.png)
+        ![](./media/image73a.png)
 
-  
+15.  **\[Network
+    Interfaces\]** の下で、鉛筆アイコンをクリックして編集します。
 
-14. VM が**F2s_v2** VM
-    サイズを使用するように構成されていることを確認します。**Network
-    Interfaces**で**InternalNATSwitch**を選択して、ネットワーク
-    インターフェイス設定を開きます。
+        ![](./media/image74a.png)
 
-    ![](./media/image74.png)
+16.  以下のように設定を変更してください
 
-15. **Private IP
-    address**を`192.168.0.8`に変更します。**OK**を選択して、ネットワークインターフェース設定ブレードを閉じます。
+        * IP address type - **Static**
 
-    ![Graphical user interface, application Description automatically
-  generated](./media/image75.png)
+        * **Private IP address** - `192.168.0.4`
 
-  
+        * **「Apply」ボタン**をクリックします。
 
-16. **UbuntuWAF**設定を**Save**します。
+        ![](./media/image75a.png)
 
-    ![Graphical user interface, application Description automatically
-  generated](./media/image76.png)
+17.  **smarthotelweb1** の設定を**「Save」します** 。
 
-  
+        ![](./media/image76a.png)
+
+        ![](./media/image77a.png)
+
+18.  これらの手順を繰り返して、**smarthotelweb2**のプライベートIPアドレスを  
+    設定します。 
+
+        * VMサイズが**F2s_v2であることを確認する** 
+
+        * IP address type - **Static**
+
+        * **Private IP address** - `192.168.0.5`
+
+19.  これらの手順を繰り返して、**UbuntuWAF** のプライベートIPアドレスを  
+    設定します。 
+
+        * VMサイズが**F2s_v2であることを確認する** 
+
+        * IP address type - **Static**
+
+        * **Private IP address** - `192.168.0.8`
 
 タスクは完了しました。ウィンドウを閉じずに次のタスクに進んでください。
+
 
 **タスクのまとめ**
 
@@ -586,9 +616,9 @@ VMサイズを構成しました。
 
   
 
-3.  **Step 3: Migrate**で、**Migrate**を選択します。
+3.  **「Overview」** 画面から **「Migrate」** タンをクリックします。
 
-    ![](./media/image79.jpg)
+    ![](./media/image79a.png)
 
   
 
@@ -599,14 +629,16 @@ VMサイズを構成しました。
 
   
 
-  > **注意:** データ損失を最小限に抑えるため、移行前にon-premisesの仮想マシンを自動的にシャットダウンするかどうかをオプションで選択できます。このラボではどちらの設定でも機能します。
+    > **注意:** データ損失を最小限に抑えるため、移行前にon-premisesの仮想マシンを自動的にシャットダウンするかどうかをオプションで選択できます。このラボではどちらの設定でも機能します。
 
-5.  **Migrate**ブレードで3
-    つの仮想マシンを選択し、**Migrate**を選択して移行プロセスを開始します。
+5.  **\[Migrate** **\]** ブレードで3 つの仮想マシンを選択し、
+    **\[Migrate** **\]** ボタンをクリックして  
+    移行プロセスを開始します。
 
-    ![](./media/image81.jpg)
+    ![](./media/image81a.png)
 
-  
+    > **注**:
+    > このテスト環境ではテスト移行を実行していないため、テスト移行ステータスが「Failed」になっていることは無視してください。  
 
 6.  移行プロセスが開始されます。
 
@@ -615,7 +647,7 @@ VMサイズを構成しました。
 7.  進行状況を監視するには、左側の**Manage**の下にある**Jobs**を選択し、3
     つの**Planned failover**のステータスを確認します。
 
-    ![](./media/image83.jpg)
+    ![](./media/image83a.png)
 
   
 
@@ -623,7 +655,7 @@ VMサイズを構成しました。
     failover**ジョブの**Status**がすべて**Successful**になるまで**Wait**します。ブラウザを更新する必要はありません。これには最大**15
     minutes**。
 
-    ![](./media/image84.jpg)
+    ![](./media/image84a.png)
 
   
 
@@ -632,11 +664,9 @@ VMサイズを構成しました。
     インターフェイス、およびディスク
     リソースが作成されていることを確認します。
 
-    ![](./media/image85.png)
+    ![](./media/image85b.png)
 
-  
-
-  ![](./media/image86.png)
+    ![](./media/image86.png)
 
   
 
@@ -657,18 +687,4 @@ VMサイズを構成しました。
 
 - **UbuntuWAF**
 
-残りのラボを完了できるようにクレジットを節約するために、移行された VM と
-SmartHotelHost VM を停止する必要もあります。
-
-![Graphical user interface, text, application, email Description
-automatically generated](./media/image87.png)
-
-
-
-![Graphical user interface, text, application, email Description
-automatically generated](./media/image88.png)
-
-
-
-残りのラボを完了できるようにクレジットを節約するために、移行された VM と
-SmartHotelHost VM を停止する必要もあります。
+![](./media/image88.png)
