@@ -30,6 +30,20 @@ MigrateアプライアンスをVMとしてデプロイし、必要なDiscovery�
     portal**タブに戻って、または新しいタブを開いて`https://portal.azure.com` に`**Office
     365 tenant credentials**を使用してログインします。
 
+2.  検索バーに `resource groups` と入力し、 「 **resource groups** 」を選択します。
+
+- ![](./media/image1a.png)
+
+3.  **\[+
+    Create\] ボタン**をクリックし、名前に `AzureMigrateRG' と入力し、リージョンは **West
+    US** にして、 **\[Review + create\]** ボタンをクリックします
+
+- ![](./media/image2a.png)
+
+4.  **Create**ボタンをクリックします。
+
+- ![](./media/image3a.png)
+
 2.  検索バーに `Azure Migrate` と入力し、**Azure
     Migrate**を選択して、以下に示す**Azure Migrate
     Overview**ブレードを開きます。
@@ -52,14 +66,13 @@ MigrateアプライアンスをVMとしてデプロイし、必要なDiscovery�
 
   
 
-5.  サブスクリプションを選択し`AzureMigrateRG`という名前の新しいリソースグループを作成します。
+8.  **AzureMigrateRG**という名前のリソースグループを選択します。
 
-    ![](./media/image6.png)
+9.  `SmartHotelMigration` をプロジェクト名`として入力し、移行評価データを  
+    保存するために、近所の地域を選択します。ここでは **United States** を  
+    選択します。 **「Create」** を選択します。
 
-6.  `SmartHotelMigration`と入力し、移行評価データを保存する地域を選択します。ここでは**United
-    States**を選択します。**Create**を選択します。
-
-    ![](./media/image7.png)
+    ![](./media/image7a.png)
 
     ![](./media/image8.png)
 
@@ -159,9 +172,8 @@ Hyper-V サーバーと通信してon-premisesVM
 
     ![](./media/image23.png)
 
-12. **SmartHotelHost VM**で Chrome ブラウザーを開き、メモからコピーした
-    Azure Migrate
-    アプライアンスのリンクを貼り付けると、ファイルのダウンロードが開始されます。
+12. **SmartHotelHost VM** で Chrome
+    ブラウザーを開き、コピーしたリンク`https://go.microsoft.com/fwlink/?linkid=2191848` ファイルのダウンロードが開始されます。
 
     ![](./media/image24.png)
 
@@ -374,6 +386,11 @@ Managerを閉じないでください。
     sources**に進みます。
 
     ![](./media/image58.png)
+
+    > **注意**: 以下の通知を受け取った場合は無視できます。
+
+    ![](./media/image58a.png)
+
 
 19. 資格情報と検出ソースの管理で**Step 1: Provide Hyper-V host
     credentials**に**Add credentials**を選択します。
@@ -1097,24 +1114,19 @@ Migrateを使用して、発見フェーズ中に収集されたデータを使�
 
 
 
-18. **Manage**の下で**Appliances**を選択します。**Refresh
-    services**を選択します。
+18. **Manage** の下で **Appliance** を選択し、
+    **SHAppl@lab.LabInstance.Id** を  
+    クリックします。
 
-    ![](./media/image128.jpg)
+    ![](./media/image128a.png)
 
+19.  **Refresh services** ボタンをクリックし、更新操作が完了するまで  お待ちください。これで最新の情報が表示されるようになります。
 
+    
+![](./media/image129a.png) 
 
-    ![](./media/image129.jpg)
+このタスクは完了しました。次のタスクに進むには、このタブを閉じないでください。
 
-
-
-19. 更新操作が完了するまでお待ちください。最新の情報が表示されるはずです。
-
-    ![](./media/image130.png)
-
-
-
-  このタスクは完了しました。次のタスクに進むには、このタブを閉じないでください。
 
 **タスクのまとめ**
 
